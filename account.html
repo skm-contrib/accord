@@ -2,7 +2,7 @@
 <html lang="uk">
 
 <head>
-	<title>Оформленння замовлення</title>
+	<title>Особистий кабінет</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -5641,401 +5641,44 @@
 					<a href="#" class="breadcrumbs__link _icon-house"></a>
 					<ul class="breadcrumbs__list">
 						<li class="breadcrumbs__item">
-							<a class="breadcrumbs__link" href="#">Обладнання</a>
+							<a class="breadcrumbs__link" href="#">Головна</a>
 						</li>
 						<li class="breadcrumbs__item">
-							<a class="breadcrumbs__link" href="#">Кошик</a>
+							<a class="breadcrumbs__link" href="#">Список бажань</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<section class="page__checkout checkout">
-				<div class="checkout__container">
-					<div class="checkout__form form-checkout">
-						<div class="form-checkout__block block-checkout">
-							<div class="block-checkout__header block-checkout__header--margin">
-								<h2 class="block-checkout__title title-product _icon-user">Новий користувач</h2>
-								<div class="block-checkout__label">
-									Я вже зареєстрований, <a href="#">Увійти в кабінет</a>
-								</div>
-							</div>
-							<div class="block-checkout__sign-up sign-up-checkout">
-								<div class="sign-up-checkout__label">Зареєструватися?</div>
-								<label class="sign-up-checkout__radiobox radiobox radiobox--simple">
-									Так
-									<div class="radiobox__icon"></div>
-									<input type="radio" name="sign-up">
-								</label>
-								<label class="sign-up-checkout__radiobox radiobox radiobox--simple">
-									Ні
-									<div class="radiobox__icon"></div>
-									<input type="radio" name="sign-up">
-								</label>
-							</div>
-							<div class="block-checkout__body">
-								<div class="block-checkout__field field">
-									<div class="field__label"><span>*</span>Імʼя та Прізвище</div>
-									<input type="text" required placeholder="Олексій Іванов" class="field__input input">
-								</div>
-								<div class="block-checkout__field field">
-									<div class="field__label"><span>*</span>Телефон</div>
-									<input type="text" required placeholder="+38" class="field__input input">
-								</div>
-								<div class="block-checkout__field field">
-									<div class="field__label"><span>*</span>E-mail</div>
-									<input type="email" required placeholder="Ivanov@gmail.com" class="field__input input">
-								</div>
-							</div>
-						</div>
-						<div class="form-checkout__block block-checkout">
-							<div class="block-checkout__header">
-								<h2 class="block-checkout__title title-product _icon-user">Доставка</h2>
-							</div>
-							<label class="sign-up-checkout__radiobox radiobox">
-								<div class="radiobox__icon"></div>
-								<img src="img/checkout/np.svg" alt="Image" class="radiobox__image">
-								Доставка у відділення Нової пошти
-								<input type="radio" name="shipping">
-							</label>
-							<label class="sign-up-checkout__radiobox radiobox">
-								<div class="radiobox__icon"></div>
-								<img src="img/checkout/np.svg" alt="Image" class="radiobox__image">
-								Доставка курєʼром Нової пошти на адресу
-								<input type="radio" name="shipping">
-							</label>
-							<label class="sign-up-checkout__radiobox radiobox">
-								<div class="radiobox__icon"></div>
-								<img src="img/checkout/cart.svg" alt="Image" class="radiobox__image">
-								Самовивіз (м. Київ, вул Червоноткацька, 83)
-								<input type="radio" name="shipping">
-							</label>
-							<label class="sign-up-checkout__radiobox radiobox">
-								<div class="radiobox__icon"></div>
-								<img src="img/checkout/track.svg" alt="Image" class="radiobox__image">
-								Доставка по Києву (безкоштовно від 3000 грн)
-								<input type="radio" name="shipping">
-							</label>
-						</div>
-						<div class="form-checkout__block block-checkout">
-							<div class="block-checkout__header">
-								<h2 class="block-checkout__title title-product _icon-location">Адреса доставки</h2>
-							</div>
-							<div class="block-checkout__body">
-								<div class="block-checkout__field field">
-
-									<div class="field__label"><span>*</span>Місто</div>
-									<input type="text" required placeholder="Київ" class="field__input input">
-								</div>
-								<select name="form[]" data-class-modif="checkout">
-									<option value="">Вкажіть відділення Нової пошти</option>
-									<option value="1">Відділення №1</option>
-									<option value="2">Відділення №2</option>
-									<option value="3">Відділення №3</option>
-									<option value="4">Відділення №4</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-checkout__block block-checkout">
-							<div class="block-checkout__header">
-								<h2 class="block-checkout__title title-product _icon-card">Спосіб оплати</h2>
-							</div>
-							<label class="sign-up-checkout__radiobox radiobox">
-								<div class="radiobox__icon"></div>
-								<img src="img/checkout/card.svg" alt="Image" class="radiobox__image">
-								MONOBANK VISA/MasterCard
-								<input type="radio" name="payment">
-							</label>
-							<label class="sign-up-checkout__radiobox radiobox">
-								<div class="radiobox__icon"></div>
-								<img src="img/checkout/checkout.svg" alt="Image" class="radiobox__image">
-								Безготівкова оплата (для юр. осіб)
-								<input type="radio" name="payment">
-							</label>
-						</div>
-					</div>
-					<div class="checkout__aside aside-checkout">
-						<h2 class="aside-checkout__title">
-							Оформлення замовлення
-						</h2>
-						<div class="aside-checkout__block block-aside-ch">
-							<div class="block-aside-ch__header">
-								<h3 class="block-aside-ch__title">
-									Товари в наявності
-								</h3>
-							</div>
-							<div class="block-aside-ch__products">
-								<div class="block-aside-ch__product product-checkout">
-									<button data-da="{.product-checkout} .product-checkout__header, 599.98, last" class="product-checkout__remove _icon-cross">
-									</button>
-									<a href="#" data-da="{.product-checkout} .product-checkout__body, 599.98, first" class="product-checkout__image-link">
-										<img src="img/products/05.webp" alt="Image" class="ibg ibg--contain">
-									</a>
-									<div class="product-checkout__body">
-										<div data-da="{.product-checkout}, 599.98, first" class="product-checkout__header">
-											<a href="#" class="product-checkout__link">Келих Arcoroc Elegance 270 мл, 1 шт.</a>
-										</div>
-										<div data-da="{.product-checkout}, 599.98, 1" class="product-checkout__price">
-											318 грн <span>350 грн</span>
-										</div>
-										<div data-min="1" data-max="999" class="counter">
-											<button class="counter__btn counter__btn--decrement" type="button">-</button>
-											<input type="number" value="1">
-											<button class="counter__btn counter__btn--increment" type="button">+</button>
-										</div>
-									</div>
-									<div class="product-checkout__total">
-										1 908 грн.
-									</div>
-									<button data-da="{.product-checkout} .product-checkout__body, 599.98, last" class="product-checkout__favorite">
-									</button>
-								</div>
-								<div class="block-aside-ch__product product-checkout">
-									<button data-da="{.product-checkout} .product-checkout__header, 599.98, last" class="product-checkout__remove _icon-cross">
-									</button>
-									<a href="#" data-da="{.product-checkout} .product-checkout__body, 599.98, first" class="product-checkout__image-link">
-										<img src="img/products/05.webp" alt="Image" class="ibg ibg--contain">
-									</a>
-									<div class="product-checkout__body">
-										<div data-da="{.product-checkout}, 599.98, first" class="product-checkout__header">
-											<a href="#" class="product-checkout__link">Келих Arcoroc Elegance 270 мл, 1 шт.</a>
-										</div>
-										<div data-da="{.product-checkout}, 599.98, 1" class="product-checkout__price">
-											318 грн <span>350 грн</span>
-										</div>
-										<div data-min="1" data-max="999" class="counter">
-											<button class="counter__btn counter__btn--decrement" type="button">-</button>
-											<input type="number" value="1">
-											<button class="counter__btn counter__btn--increment" type="button">+</button>
-										</div>
-									</div>
-									<div class="product-checkout__total">
-										1 908 грн.
-									</div>
-									<button data-da="{.product-checkout} .product-checkout__body, 599.98, last" class="product-checkout__favorite">
-									</button>
-								</div>
-							</div>
-							<dl class="block-aside-ch__list">
-								<div>
-									<dt>Сума замовлення:</dt>
-									<dd>3 972 грн.</dd>
-								</div>
-								<div class="_gray">
-									<dt>Економія:</dt>
-									<dd>288 грн.</dd>
-								</div>
-								<div class="_total">
-									<dt>Разом:</dt>
-									<dd>3 684 грн.</dd>
-								</div>
-							</dl>
-							<div class="block-aside-ch__promocodes">
-								<div class="block-aside-ch__promocode promocode-ch">
-									<div class="promocode-ch__input _icon-label">
-										<input type="text" placeholder="Промокод">
-									</div>
-									<button class="promocode-ch__button">
-										Ввести
-									</button>
-								</div>
-								<div class="block-aside-ch__promocode promocode-ch">
-									<div class="promocode-ch__input _icon-present">
-										<input type="text" placeholder="Сертифікат">
-									</div>
-									<button class="promocode-ch__button">
-										Ввести
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="aside-checkout__block block-aside-ch">
-							<div class="block-aside-ch__header">
-								<h3 class="block-aside-ch__title">
-									Товари під замовлення
-								</h3>
-							</div>
-
-							<div class="block-aside-ch__text">
-								<p>
-									Ці товари наразі відсутні на складі, але ви можете зробити індивідуальне замовлення.
-								</p>
-								<p class="_gray">
-									Після оформлення замовлення з вами зв'яжеться наш менеджер для уточнення деталей.
-								</p>
-							</div>
-							<div class="block-aside-ch__products">
-								<div class="block-aside-ch__product product-checkout">
-									<button data-da="{.product-checkout} .product-checkout__header, 599.98, last" class="product-checkout__remove _icon-cross">
-									</button>
-									<a href="#" data-da="{.product-checkout} .product-checkout__body, 599.98, first" class="product-checkout__image-link">
-										<img src="img/products/05.webp" alt="Image" class="ibg ibg--contain">
-									</a>
-									<div class="product-checkout__body">
-										<div data-da="{.product-checkout}, 599.98, first" class="product-checkout__header">
-											<a href="#" class="product-checkout__link">Келих Arcoroc Elegance 270 мл, 1 шт.</a>
-										</div>
-										<div data-da="{.product-checkout}, 599.98, 1" class="product-checkout__price">
-											318 грн <span>350 грн</span>
-										</div>
-										<div data-min="1" data-max="999" class="counter">
-											<button class="counter__btn counter__btn--decrement" type="button">-</button>
-											<input type="number" value="1">
-											<button class="counter__btn counter__btn--increment" type="button">+</button>
-										</div>
-									</div>
-									<div class="product-checkout__total">
-										1 908 грн.
-									</div>
-									<button data-da="{.product-checkout} .product-checkout__body, 599.98, last" class="product-checkout__favorite _active">
-									</button>
-								</div>
-
-							</div>
-							<dl class="block-aside-ch__list">
-								<div>
-									<dt>Сума замовлення:</dt>
-									<dd>3 972 грн.</dd>
-								</div>
-								<div class="_gray">
-									<dt>Економія:</dt>
-									<dd>288 грн.</dd>
-								</div>
-								<div class="_total">
-									<dt>Разом:</dt>
-									<dd>3 684 грн.</dd>
-								</div>
-							</dl>
-							<button data-da=".checkout__form, 991.98, last" class="block-aside-ch__button button button--green">
-								Оформити замовлення
-							</button>
-						</div>
-						<div data-da=".checkout__container, 767.98, 1" class="aside-checkout__block block-aside-ch">
-							<div class="block-aside-ch__header">
-								<h3 class="block-aside-ch__title">
-									Додати до замовлення
-								</h3>
-								<a href="#" class="block-aside-ch__link _icon-arrow-right"><span>Дивитися ще</span></a>
-							</div>
-							<div class="block-aside-ch__slider splide">
-								<div class="splide__track">
-									<ul class="splide__list">
-										<li class="splide__slide">
-											<article class="item-product-min">
-												<div class="item-product-min__image">
-													<button type="button" class="item-product-min__fav _icon-heart">
-													</button>
-													<a href="#" class="item-product-min__image-link">
-														<img class="ibg" src="img/products/05.webp" alt="Image">
-													</a>
-												</div>
-												<h3 class="item-product-min__title">
-													<a href="#" class="item-product-min__link">Келих для вина 350 мл. Symetrie Chef & Sommelier
-													</a>
-												</h3>
-												<div class="item-product-min__body">
-													<div class="item-product-min__price">
-														329 грн.
-													</div>
-													<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
-													</button>
-												</div>
-											</article>
-										</li>
-										<li class="splide__slide">
-											<article class="item-product-min">
-												<div class="item-product-min__image">
-													<button type="button" class="item-product-min__fav _icon-heart _active">
-													</button>
-													<a href="#" class="item-product-min__image-link">
-														<img class="ibg" src="img/products/05.webp" alt="Image">
-													</a>
-												</div>
-												<h3 class="item-product-min__title">
-													<a href="#" class="item-product-min__link">Келих для вина 350 мл. Symetrie Chef & Sommelier
-													</a>
-												</h3>
-												<div class="item-product-min__body">
-													<div class="item-product-min__price">
-														<span>450 грн.</span>
-														329 грн.
-													</div>
-													<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
-													</button>
-												</div>
-											</article>
-										</li>
-										<li class="splide__slide">
-											<article class="item-product-min">
-												<div class="item-product-min__image">
-													<button type="button" class="item-product-min__fav _icon-heart">
-													</button>
-													<a href="#" class="item-product-min__image-link">
-														<img class="ibg" src="img/products/05.webp" alt="Image">
-													</a>
-												</div>
-												<h3 class="item-product-min__title">
-													<a href="#" class="item-product-min__link">Келих для вина 350 мл. Symetrie Chef & Sommelier
-													</a>
-												</h3>
-												<div class="item-product-min__body">
-													<div class="item-product-min__price">
-														329 грн.
-													</div>
-													<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
-													</button>
-												</div>
-											</article>
-										</li>
-										<li class="splide__slide">
-											<article class="item-product-min">
-												<div class="item-product-min__image">
-													<button type="button" class="item-product-min__fav _icon-heart _active">
-													</button>
-													<a href="#" class="item-product-min__image-link">
-														<img class="ibg" src="img/products/05.webp" alt="Image">
-													</a>
-												</div>
-												<h3 class="item-product-min__title">
-													<a href="#" class="item-product-min__link">Келих для вина 350 мл. Symetrie Chef & Sommelier
-													</a>
-												</h3>
-												<div class="item-product-min__body">
-													<div class="item-product-min__price">
-														<span>450 грн.</span>
-														329 грн.
-													</div>
-													<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
-													</button>
-												</div>
-											</article>
-										</li>
-										<li class="splide__slide">
-											<article class="item-product-min">
-												<div class="item-product-min__image">
-													<button type="button" class="item-product-min__fav _icon-heart _active">
-													</button>
-													<a href="#" class="item-product-min__image-link">
-														<img class="ibg" src="img/products/05.webp" alt="Image">
-													</a>
-												</div>
-												<h3 class="item-product-min__title">
-													<a href="#" class="item-product-min__link">Келих для вина 350 мл. Symetrie Chef & Sommelier
-													</a>
-												</h3>
-												<div class="item-product-min__body">
-													<div class="item-product-min__price">
-														<span>450 грн.</span>
-														329 грн.
-													</div>
-													<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
-													</button>
-												</div>
-											</article>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+			<section class="page__account account">
+				<div class="account__container">
+					<h1 class="account__title title-account title-account--margin">
+						Особистий кабінет
+					</h1>
+					<div class="account__items">
+						<a href="#" class="account__link link-account _icon-user">
+							Особиста інформація
+						</a>
+						<a href="wishlist-account.html" class="account__link link-account _icon-heart">
+							Список бажань
+							<span>4</span>
+						</a>
+						<a href="#" class="account__link link-account _icon-list">
+							Історія замовлень
+						</a>
+						<a href="#" class="account__link link-account _icon-libra">
+							Список порівнянь
+							<span>3</span>
+						</a>
+						<a href="#" class="account__link link-account _icon-bag">
+							Комерційні пропозиції
+						</a>
+						<a href="#" class="account__link link-account _icon-cart">
+							Кошик
+							<span>3</span>
+						</a>
+						<a href="#" class="account__link link-account link-account--exit _icon-exit">
+							Вийти
+						</a>
 					</div>
 				</div>
 			</section>

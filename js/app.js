@@ -5704,7 +5704,7 @@
                     right: "3.75rem"
                 },
                 breakpoints: {
-                    1499.98: {
+                    1399.98: {
                         perPage: 3
                     },
                     1069.98: {
@@ -6955,6 +6955,10 @@
         }));
         input.addEventListener("input", validateInput);
         input.addEventListener("blur", validateInput);
+    }));
+    const origSelect = document.querySelector("#category");
+    if (origSelect) document.addEventListener("selectCallback", (e => {
+        if (e.detail.select === origSelect) console.log(e.detail.select.selectedOptions[0]);
     }));
     menuInit();
     spoilers();

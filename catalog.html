@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241028160149">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241111172816">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5734,7 +5734,7 @@
 									</button>
 								</div>
 							</div>
-							<select name="form[]" data-class-modif="border">
+							<select name="form[]" id="category" data-class-modif="border">
 								<option value="1" selected>Від дешевих до дорогих</option>
 								<option value="2">Від дорогих до дешевих</option>
 								<option value="3">За рейтингом</option>
@@ -6070,7 +6070,7 @@
 												Акція
 											</div>
 											<div class="item-product__actions">
-												<button type="button" class="item-product__button item-product__button--yellow _icon-heart">
+												<button type="button" class="item-product__button item-product__button--fav _icon-heart">
 												</button>
 												<button type="button" class="item-product__button _icon-libra">
 												</button>
@@ -6261,7 +6261,7 @@
 												Акція
 											</div>
 											<div class="item-product__actions">
-												<button type="button" class="item-product__button item-product__button--yellow _icon-heart">
+												<button type="button" class="item-product__button item-product__button--fav _icon-heart">
 												</button>
 												<button type="button" class="item-product__button _icon-libra">
 												</button>
@@ -6452,7 +6452,7 @@
 												Акція
 											</div>
 											<div class="item-product__actions">
-												<button type="button" class="item-product__button item-product__button--yellow _icon-heart">
+												<button type="button" class="item-product__button item-product__button--fav _icon-heart">
 												</button>
 												<button type="button" class="item-product__button _icon-libra">
 												</button>
@@ -6634,9 +6634,12 @@
 				</section>
 				<section class="catalog__viewed recomendations">
 					<div class="recomendations__grid-container">
-						<h2 class="recomendations__title">
-							Переглянуті товари
-						</h2>
+						<div class="recomendations__header">
+							<h2 class="recomendations__title">
+								Переглянуті товари
+							</h2>
+						</div>
+
 						<div data-simplebar class="recomendations__body">
 							<div class="recomendations__items">
 								<article class="item-product-min">
@@ -6653,8 +6656,8 @@
 									</h3>
 									<div class="item-product-min__body">
 										<div class="item-product-min__price">
-											329 грн.
 											<span>450 грн.</span>
+											329 грн.
 										</div>
 										<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
 										</button>
@@ -6694,8 +6697,8 @@
 									</h3>
 									<div class="item-product-min__body">
 										<div class="item-product-min__price">
-											329 грн.
 											<span>450 грн.</span>
+											329 грн.
 										</div>
 										<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
 										</button>
@@ -6735,8 +6738,8 @@
 									</h3>
 									<div class="item-product-min__body">
 										<div class="item-product-min__price">
-											329 грн.
 											<span>450 грн.</span>
+											329 грн.
 										</div>
 										<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
 										</button>
@@ -6776,8 +6779,8 @@
 									</h3>
 									<div class="item-product-min__body">
 										<div class="item-product-min__price">
-											329 грн.
 											<span>450 грн.</span>
+											329 грн.
 										</div>
 										<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
 										</button>
@@ -6817,8 +6820,8 @@
 									</h3>
 									<div class="item-product-min__body">
 										<div class="item-product-min__price">
-											329 грн.
 											<span>450 грн.</span>
+											329 грн.
 										</div>
 										<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
 										</button>
@@ -6858,8 +6861,8 @@
 									</h3>
 									<div class="item-product-min__body">
 										<div class="item-product-min__price">
-											329 грн.
 											<span>450 грн.</span>
+											329 грн.
 										</div>
 										<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
 										</button>
@@ -6899,8 +6902,8 @@
 									</h3>
 									<div class="item-product-min__body">
 										<div class="item-product-min__price">
-											329 грн.
 											<span>450 грн.</span>
+											329 грн.
 										</div>
 										<button type="button" class="item-product-min__buy-button button button--green _icon-cart">
 										</button>
@@ -7230,7 +7233,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241028160149"></script>
+	<script src="js/app.min.js?_v=20241111172816"></script>
 </body>
 
 </html>
