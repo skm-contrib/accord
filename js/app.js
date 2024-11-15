@@ -5712,17 +5712,40 @@
                         gap: "1rem"
                     },
                     739.98: {
-                        perPage: 1,
                         gap: "0.625rem",
                         padding: {
                             right: "3.3125rem"
                         }
                     },
-                    389.98: {
+                    549.98: {
                         perPage: 1,
                         gap: "0.625rem",
                         padding: {
                             right: "2.875rem"
+                        }
+                    }
+                }
+            }).mount();
+        }));
+        const productsNewsSliders = document.querySelectorAll(".news-article__products-slider");
+        if (productsNewsSliders) productsNewsSliders.forEach((slider => {
+            new splide_esm_Splide(slider, {
+                perPage: 4,
+                perMove: 1,
+                gap: "1.5rem",
+                arrows: false,
+                pagination: false,
+                breakpoints: {
+                    1399.98: {
+                        perPage: 3
+                    },
+                    739.98: {
+                        gap: "0.5rem"
+                    },
+                    649.98: {
+                        perPage: 2,
+                        padding: {
+                            right: "1.8125rem"
                         }
                     }
                 }
