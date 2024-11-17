@@ -4859,6 +4859,11 @@ body::after {
 .text-article strong {
   font-weight: 600
 }
+.text-article .quote {
+  padding-left: 1.25rem;
+  padding-right: 1.5rem;
+  border-left: .25rem solid #249c6b
+}
 .news-article__header {
   display: flex;
   align-items: center;
@@ -5632,6 +5637,9 @@ body::after {
   }
   .wishlist-account__header .select .select__content {
     flex-grow: 0
+  }
+  .text-article .quote {
+    margin-left: 7rem
   }
 }
 @media (min-width:65.62375em) {
@@ -6986,6 +6994,9 @@ body::after {
   }
   .text-article img {
     aspect-ratio: 356/200
+  }
+  .text-article .quote {
+    padding: 0 .625rem
   }
   .news-article__header:not(:last-child) {
     margin-bottom: .875rem
