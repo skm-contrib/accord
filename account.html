@@ -6,7 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241115025723">
+	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css?_v=20241128054220" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241128054220">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,8 +55,8 @@
 						</nav>
 					</div>
 					<select name="form[]" data-class-modif="lang">
-						<option value="1" selected>укр</option>
-						<option value="2">eng</option>
+						<option data-href="посилання-укр" value="1" selected>укр</option>
+						<option data-href="посилання-англ" value="2">eng</option>
 					</select>
 					<a href="tel:380672367170" data-da=".mobile-menu__body, 991.98, 6" class="header__phone _icon-phone">+38 (067) 23
 						671 70  </a>
@@ -2351,8 +2352,8 @@
 			<div class="mobile-menu">
 				<div class="mobile-menu__header">
 					<select name="form[]" data-class-modif="lang">
-						<option value="1" selected>укр</option>
-						<option value="2">eng</option>
+						<option data-href="посилання-укр" value="1" selected>укр</option>
+						<option data-href="посилання-англ" value="2">eng</option>
 					</select>
 					<button data-menu type="button" class="mobile-menu__close  _icon-cross"></button>
 				</div>
@@ -2483,3158 +2484,414 @@
 							<span>Обладнання</span>
 						</summary>
 						<div data-spoilers="991.98, max" class="spoilers-catalog-h__submenu submenu-catalog-h">
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Печі і пароконвектомати
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пароконвектомати
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі конвекційні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі на деревному вугіллі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі подові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Турбопечі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи розстійні
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Теплове обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати Sous Vide
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вапо-грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електросковороди
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Коптильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Котли харчоварильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Макароноварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Марміти
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Плити
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Поверхні для смаження
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фритюрниці
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пральне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пральні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сушильні машини
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Барне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Блендери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гранітори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електрокип'ятильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кавові машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодокришителі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери для молочних коктейлів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Охолоджувачі напоїв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Соковижималки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Допоміжне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вагове обладнання
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Душуючі пристрої
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Знищувачі комах
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для обігріву
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для підігріву страв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Подрібнювачі харчових відходів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Стерилізатори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фільтри для води
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пакувальне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вакууматори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пакети для вакууматора
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Холодильне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні морозильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні холодильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гірки холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Ларі морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодогенератори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи винні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи шокової заморозки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Обладнання для фаст-фуду
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати для фаст-фуду
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини теплові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вафельниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Мікрохвильові печі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Млинниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Преси для гамбургерів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Рисоварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Супниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тостери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фризери для морозива
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Електромеханічне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Хліборізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Картоплечистки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кутери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											М'ясорубки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери занурювальні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери планетарні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Овочерізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пили для м'яса
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Прес для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сиротерки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Слайсери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тістоміси
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тісторозкаточні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фаршемішалки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шприци для ковбас
-										</a>
-									</li>
-								</ul>
-							</details>
-							<div class="submenu-catalog-h__block submenu-catalog-h__block--pc">
+							<div class="submenu-catalog-h__body">
+								<details class="submenu-catalog-h__block">
+									<summary class="submenu-catalog-h__title">
+										Печі і пароконвектомати
+									</summary>
+									<ul class="submenu-catalog-h__list">
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Пароконвектомати
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Печі для піци
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Печі конвекційні
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Печі на деревному вугіллі
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Печі подові
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Турбопечі
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Шафи розстійні
+											</a>
+										</li>
+									</ul>
+								</details>
+								<details class="submenu-catalog-h__block">
+									<summary class="submenu-catalog-h__title">
+										Теплове обладнання
+									</summary>
+									<ul class="submenu-catalog-h__list">
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Апарати Sous Vide
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Вапо-грилі
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Електросковороди
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Коптильні
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Котли харчоварильні
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Макароноварки
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Марміти
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Плити
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Поверхні для смаження
+											</a>
+										</li>
+										<li class="submenu-catalog-h__item">
+											<a href="#" class="submenu-catalog-h__link">
+												Фритюрниці
+											</a>
+										</li>
+									</ul>
+								</details>
+							</div>
+							<div data-da="{.submenu-catalog-h} .submenu-catalog-h__body, 1439.98, last" class="submenu-catalog-h__block submenu-catalog-h__block--pc">
 								<img src="img/header/banners/01.webp" class="ibg ibg--contain" alt="Image">
-							</div>
-						</div>
-					</details>
-					<details class="spoilers-catalog-h__item">
-						<summary class="spoilers-catalog-h__title">
-							<div class="spoilers-catalog-h__icon">
-								<img src="img/header/categories/02.svg" alt="Image" class="ibg ibg--contain">
-							</div>
-							<span>Посуд</span>
-						</summary>
-						<div data-spoilers="991.98, max" class="spoilers-catalog-h__submenu submenu-catalog-h">
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Печі і пароконвектомати
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пароконвектомати
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі конвекційні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі на деревному вугіллі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі подові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Турбопечі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи розстійні
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Теплове обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати Sous Vide
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вапо-грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електросковороди
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Коптильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Котли харчоварильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Макароноварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Марміти
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Плити
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Поверхні для смаження
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фритюрниці
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пральне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пральні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сушильні машини
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Барне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Блендери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гранітори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електрокип'ятильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кавові машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодокришителі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери для молочних коктейлів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Охолоджувачі напоїв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Соковижималки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Допоміжне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вагове обладнання
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Душуючі пристрої
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Знищувачі комах
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для обігріву
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для підігріву страв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Подрібнювачі харчових відходів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Стерилізатори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фільтри для води
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пакувальне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вакууматори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пакети для вакууматора
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Холодильне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні морозильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні холодильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гірки холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Ларі морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодогенератори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи винні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи шокової заморозки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Обладнання для фаст-фуду
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати для фаст-фуду
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини теплові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вафельниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Мікрохвильові печі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Млинниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Преси для гамбургерів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Рисоварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Супниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тостери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фризери для морозива
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Електромеханічне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Хліборізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Картоплечистки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кутери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											М'ясорубки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери занурювальні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери планетарні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Овочерізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пили для м'яса
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Прес для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сиротерки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Слайсери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тістоміси
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тісторозкаточні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фаршемішалки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шприци для ковбас
-										</a>
-									</li>
-								</ul>
-							</details>
-							<div class="submenu-catalog-h__block submenu-catalog-h__block--pc">
-								<img src="img/header/banners/02.webp" class="ibg ibg--contain" alt="Image">
-							</div>
-						</div>
-					</details>
-					<details class="spoilers-catalog-h__item">
-						<summary class="spoilers-catalog-h__title">
-							<div class="spoilers-catalog-h__icon">
-								<img src="img/header/categories/03.svg" alt="Image" class="ibg ibg--contain">
-							</div>
-							<span>Столові прибори</span>
-						</summary>
-						<div data-spoilers="991.98, max" class="spoilers-catalog-h__submenu submenu-catalog-h">
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Печі і пароконвектомати
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пароконвектомати
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі конвекційні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі на деревному вугіллі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі подові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Турбопечі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи розстійні
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Теплове обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати Sous Vide
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вапо-грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електросковороди
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Коптильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Котли харчоварильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Макароноварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Марміти
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Плити
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Поверхні для смаження
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фритюрниці
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пральне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пральні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сушильні машини
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Барне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Блендери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гранітори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електрокип'ятильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кавові машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодокришителі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери для молочних коктейлів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Охолоджувачі напоїв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Соковижималки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Допоміжне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вагове обладнання
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Душуючі пристрої
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Знищувачі комах
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для обігріву
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для підігріву страв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Подрібнювачі харчових відходів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Стерилізатори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фільтри для води
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пакувальне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вакууматори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пакети для вакууматора
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Холодильне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні морозильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні холодильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гірки холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Ларі морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодогенератори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи винні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи шокової заморозки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Обладнання для фаст-фуду
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати для фаст-фуду
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини теплові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вафельниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Мікрохвильові печі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Млинниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Преси для гамбургерів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Рисоварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Супниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тостери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фризери для морозива
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Електромеханічне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Хліборізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Картоплечистки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кутери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											М'ясорубки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери занурювальні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери планетарні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Овочерізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пили для м'яса
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Прес для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сиротерки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Слайсери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тістоміси
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тісторозкаточні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фаршемішалки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шприци для ковбас
-										</a>
-									</li>
-								</ul>
-							</details>
-							<div class="submenu-catalog-h__block submenu-catalog-h__block--pc">
-								<img src="img/header/banners/03.webp" class="ibg ibg--contain" alt="Image">
-							</div>
-						</div>
-					</details>
-					<details class="spoilers-catalog-h__item">
-						<summary class="spoilers-catalog-h__title">
-							<div class="spoilers-catalog-h__icon">
-								<img src="img/header/categories/04.svg" alt="Image" class="ibg ibg--contain">
-							</div>
-							<span>Сервіровка і фуршет</span>
-						</summary>
-						<div data-spoilers="991.98, max" class="spoilers-catalog-h__submenu submenu-catalog-h">
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Печі і пароконвектомати
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пароконвектомати
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі конвекційні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі на деревному вугіллі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі подові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Турбопечі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи розстійні
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Теплове обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати Sous Vide
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вапо-грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електросковороди
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Коптильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Котли харчоварильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Макароноварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Марміти
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Плити
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Поверхні для смаження
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фритюрниці
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пральне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пральні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сушильні машини
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Барне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Блендери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гранітори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електрокип'ятильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кавові машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодокришителі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери для молочних коктейлів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Охолоджувачі напоїв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Соковижималки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Допоміжне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вагове обладнання
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Душуючі пристрої
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Знищувачі комах
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для обігріву
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для підігріву страв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Подрібнювачі харчових відходів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Стерилізатори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фільтри для води
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пакувальне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вакууматори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пакети для вакууматора
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Холодильне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні морозильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні холодильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гірки холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Ларі морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодогенератори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи винні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи шокової заморозки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Обладнання для фаст-фуду
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати для фаст-фуду
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини теплові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вафельниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Мікрохвильові печі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Млинниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Преси для гамбургерів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Рисоварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Супниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тостери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фризери для морозива
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Електромеханічне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Хліборізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Картоплечистки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кутери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											М'ясорубки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери занурювальні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери планетарні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Овочерізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пили для м'яса
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Прес для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сиротерки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Слайсери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тістоміси
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тісторозкаточні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фаршемішалки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шприци для ковбас
-										</a>
-									</li>
-								</ul>
-							</details>
-							<div class="submenu-catalog-h__block submenu-catalog-h__block--pc">
-								<img src="img/header/banners/04.webp" class="ibg ibg--contain" alt="Image">
-							</div>
-						</div>
-					</details>
-					<details class="spoilers-catalog-h__item">
-						<summary class="spoilers-catalog-h__title">
-							<div class="spoilers-catalog-h__icon">
-								<img src="img/header/categories/05.svg" alt="Image" class="ibg ibg--contain">
-							</div>
-							<span>Інвентар</span>
-						</summary>
-						<div data-spoilers="991.98, max" class="spoilers-catalog-h__submenu submenu-catalog-h">
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Печі і пароконвектомати
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пароконвектомати
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі конвекційні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі на деревному вугіллі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі подові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Турбопечі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи розстійні
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Теплове обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати Sous Vide
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вапо-грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електросковороди
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Коптильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Котли харчоварильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Макароноварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Марміти
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Плити
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Поверхні для смаження
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фритюрниці
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пральне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пральні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сушильні машини
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Барне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Блендери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гранітори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електрокип'ятильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кавові машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодокришителі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери для молочних коктейлів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Охолоджувачі напоїв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Соковижималки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Допоміжне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вагове обладнання
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Душуючі пристрої
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Знищувачі комах
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для обігріву
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для підігріву страв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Подрібнювачі харчових відходів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Стерилізатори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фільтри для води
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пакувальне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вакууматори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пакети для вакууматора
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Холодильне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні морозильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні холодильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гірки холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Ларі морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодогенератори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи винні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи шокової заморозки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Обладнання для фаст-фуду
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати для фаст-фуду
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини теплові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вафельниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Мікрохвильові печі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Млинниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Преси для гамбургерів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Рисоварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Супниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тостери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фризери для морозива
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Електромеханічне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Хліборізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Картоплечистки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кутери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											М'ясорубки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери занурювальні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери планетарні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Овочерізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пили для м'яса
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Прес для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сиротерки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Слайсери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тістоміси
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тісторозкаточні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фаршемішалки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шприци для ковбас
-										</a>
-									</li>
-								</ul>
-							</details>
-							<div class="submenu-catalog-h__block submenu-catalog-h__block--pc">
-								<img src="img/header/banners/01.webp" class="ibg ibg--contain" alt="Image">
-							</div>
-						</div>
-					</details>
-					<details class="spoilers-catalog-h__item">
-						<summary class="spoilers-catalog-h__title">
-							<div class="spoilers-catalog-h__icon">
-								<img src="img/header/categories/06.svg" alt="Image" class="ibg ibg--contain">
-							</div>
-							<span>Нейтральне обладнання</span>
-						</summary>
-						<div data-spoilers="991.98, max" class="spoilers-catalog-h__submenu submenu-catalog-h">
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Печі і пароконвектомати
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пароконвектомати
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі конвекційні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі на деревному вугіллі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі подові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Турбопечі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи розстійні
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Теплове обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати Sous Vide
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вапо-грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електросковороди
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Коптильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Котли харчоварильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Макароноварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Марміти
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Плити
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Поверхні для смаження
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фритюрниці
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пральне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пральні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сушильні машини
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Барне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Блендери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гранітори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електрокип'ятильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кавові машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодокришителі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери для молочних коктейлів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Охолоджувачі напоїв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Соковижималки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Допоміжне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вагове обладнання
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Душуючі пристрої
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Знищувачі комах
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для обігріву
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для підігріву страв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Подрібнювачі харчових відходів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Стерилізатори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фільтри для води
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пакувальне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вакууматори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пакети для вакууматора
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Холодильне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні морозильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні холодильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гірки холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Ларі морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодогенератори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи винні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи шокової заморозки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Обладнання для фаст-фуду
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати для фаст-фуду
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини теплові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вафельниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Мікрохвильові печі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Млинниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Преси для гамбургерів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Рисоварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Супниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тостери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фризери для морозива
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Електромеханічне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Хліборізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Картоплечистки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кутери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											М'ясорубки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери занурювальні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери планетарні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Овочерізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пили для м'яса
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Прес для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сиротерки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Слайсери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тістоміси
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тісторозкаточні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фаршемішалки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шприци для ковбас
-										</a>
-									</li>
-								</ul>
-							</details>
-							<div class="submenu-catalog-h__block submenu-catalog-h__block--pc">
-								<img src="img/header/banners/02.webp" class="ibg ibg--contain" alt="Image">
-							</div>
-						</div>
-					</details>
-					<details class="spoilers-catalog-h__item">
-						<summary class="spoilers-catalog-h__title">
-							<div class="spoilers-catalog-h__icon">
-								<img src="img/header/categories/07.svg" alt="Image" class="ibg ibg--contain">
-							</div>
-							<span>Клінінг та гігієна</span>
-						</summary>
-						<div data-spoilers="991.98, max" class="spoilers-catalog-h__submenu submenu-catalog-h">
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Печі і пароконвектомати
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пароконвектомати
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі конвекційні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі на деревному вугіллі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Печі подові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Турбопечі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи розстійні
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Теплове обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати Sous Vide
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вапо-грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електросковороди
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Коптильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Котли харчоварильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Макароноварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Марміти
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Плити
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Поверхні для смаження
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фритюрниці
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пральне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пральні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сушильні машини
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Барне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Блендери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гранітори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Електрокип'ятильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кавові машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодокришителі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери для молочних коктейлів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Охолоджувачі напоїв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Соковижималки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Допоміжне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вагове обладнання
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Душуючі пристрої
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Знищувачі комах
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для обігріву
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Лампи для підігріву страв
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Подрібнювачі харчових відходів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Стерилізатори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фільтри для води
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Пакувальне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вакууматори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пакети для вакууматора
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Холодильне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні морозильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Барні холодильники
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Гірки холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Ларі морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Льодогенератори
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Столи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи винні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи морозильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи холодильні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шафи шокової заморозки
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Обладнання для фаст-фуду
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Апарати для фаст-фуду
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вітрини теплові
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Вафельниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Грилі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Мікрохвильові печі
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Млинниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Преси для гамбургерів
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Рисоварки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Супниці
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тостери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фризери для морозива
-										</a>
-									</li>
-								</ul>
-							</details>
-							<details class="submenu-catalog-h__block">
-								<summary class="submenu-catalog-h__title">
-									Електромеханічне обладнання
-								</summary>
-								<ul class="submenu-catalog-h__list">
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Хліборізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Картоплечистки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Кутери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											М'ясорубки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери занурювальні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Міксери планетарні
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Овочерізки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Пили для м'яса
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Прес для піци
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Сиротерки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Слайсери
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тістоміси
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Тісторозкаточні машини
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Фаршемішалки
-										</a>
-									</li>
-									<li class="submenu-catalog-h__item">
-										<a href="#" class="submenu-catalog-h__link">
-											Шприци для ковбас
-										</a>
-									</li>
-								</ul>
-							</details>
-							<div class="submenu-catalog-h__block submenu-catalog-h__block--pc">
-								<img src="img/header/banners/03.webp" class="ibg ibg--contain" alt="Image">
 							</div>
 						</div>
 					</details>
 				</div>
 			</div>
 		</header>
+		<div id="popup-gallery" aria-hidden="true" class="popup popup--gallery">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">Закрити</button>
+					<div class="gallery-popup">
+						<div class="gallery-popup__header header-popup">
+							<h2 class="header-popup__title">Піч вугільна Kopa Basic 301</h2>
+							<div class="header-popup__body">
+								<div class="header-popup__thumb">
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="auth-popup" aria-hidden="true" class="popup popup--auth">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="auth-popup">
+						<img src="img/popup/auth/bg.webp" alt="Image" class="auth-popup__bg ibg">
+						<img src="img/header/main-logo.svg" alt="Image" class="auth-popup__logo">
+						<div class="auth-popup__body">
+							<div data-tabs class="tabs-auth">
+								<div class="tabs-auth__header">
+									<nav data-tabs-titles class="tabs-auth__navigation">
+										<button type="button" class="tabs-auth__title tab-title _tab-active">Вхід</button>
+										<button type="button" class="tabs-auth__title tab-title">Реєстрація</button>
+									</nav>
+									<button data-close class="tabs-auth__close close-popup _icon-cross"></button>
+								</div>
+								<div data-tabs-body class="tabs-auth__content">
+									<div class="tabs-auth__body">
+										<form action="#" method="post" class="tabs-auth__form">
+											<div class="tabs-auth__fields">
+												<div class="tabs-auth__field field">
+													<div class="field__label">E-mail</div>
+													<input type="email" required placeholder="Ivanov@gmail.com" class="field__input input">
+												</div>
+												<div class="tabs-auth__field field">
+													<div class="field__label">Пароль</div>
+													<div class="field__input-wrapper">
+														<input type="password" required placeholder="Введіть пароль" class="field__input input">
+														<button data-pswd-hide type="button" class="field__hide-btn _icon-eye-hidden"></button>
+													</div>
+												</div>
+												<a href="#" class="tabs-auth__recovery-link">Забули пароль?</a>
+											</div>
+											<button class="tabs-auth__submit button button--green">Увійти</button>
+										</form>
+										<div class="tabs-auth__social social-auth">
+											<div class="social-auth__label">
+												або продовжити за допомогою
+											</div>
+											<div class="social-auth__items">
+												<a href="#" class="social-auth__item">
+													<img src="img/popup/auth/social/google.svg" alt="Icon" class="ibg ibg--contain">
+												</a>
+												<a href="#" class="social-auth__item">
+													<img src="img/popup/auth/social/apple.svg" alt="Icon" class="ibg ibg--contain">
+												</a>
+												<a href="#" class="social-auth__item">
+													<img src="img/popup/auth/social/facebook.svg" alt="Icon" class="ibg ibg--contain">
+												</a>
+											</div>
+										</div>
+										<div class="tabs-auth__label">
+											Ще не маєте акаунт? <a href="#">Зареєструватись</a>
+										</div>
+									</div>
+									<div class="tabs-auth__body">
+										<form action="#" method="post" class="tabs-auth__form">
+											<div class="tabs-auth__fields">
+												<div class="tabs-auth__field field">
+													<div class="field__label">Прізвище та Ім'я</div>
+													<input type="text" required placeholder="Іванов Іван" class="field__input input">
+												</div>
+												<div class="tabs-auth__field field">
+													<div class="field__label">E-mail</div>
+													<input type="email" required placeholder="Ivanov@gmail.com" class="field__input input">
+												</div>
+												<div class="tabs-auth__field field">
+													<div class="field__label">Пароль</div>
+													<div class="field__input-wrapper">
+														<input type="password" required placeholder="Введіть пароль" class="field__input input">
+														<button data-pswd-hide type="button" class="field__hide-btn _icon-eye-hidden"></button>
+													</div>
+												</div>
+												<div class="tabs-auth__field field">
+													<div class="field__label">Пароль</div>
+													<div class="field__input-wrapper">
+														<input type="password" required placeholder="Введіть пароль" class="field__input input">
+														<button data-pswd-hide type="button" class="field__hide-btn _icon-eye-hidden"></button>
+													</div>
+													<div class="field__warning">
+														Мінімально 8 символів, включаючи одну велику літеру
+													</div>
+												</div>
+											</div>
+											<button class="tabs-auth__submit button button--green">Створити акаунт</button>
+											<div class="tabs-auth__terms">
+												Реєструючись, ви погоджуєтесь з <br>
+												<a href="#">Користувацькою угодою</a> та <a href="#">Правилами користування сайтом</a>
+											</div>
+										</form>
+										<div class="tabs-auth__label">
+											Вже маєте акаунт? <a href="#">Увійти</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="offer-popup" aria-hidden="true" class="popup popup--offer">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="offer-popup">
+						<div class="offer-popup__header">
+							<h2 class="offer-popup__title">
+								Комерційна пропозиція
+							</h2>
+							<button data-close class="offer-popup__button _icon-cross close-popup"></button>
+						</div>
+						<div class="offer-popup__items">
+							<div class="offer-popup__item product-checkout">
+								<button data-da="{.product-checkout} .product-checkout__header, 599.98, last" class="product-checkout__remove _icon-cross">
+								</button>
+								<a href="#" data-da="{.product-checkout} .product-checkout__body, 599.98, first" class="product-checkout__image-link">
+									<img src="img/products/05.webp" alt="Image" class="ibg ibg--contain">
+								</a>
+								<div class="product-checkout__body">
+									<div data-da="{.product-checkout}, 599.98, first" class="product-checkout__header">
+										<a href="#" class="product-checkout__link">Келих Arcoroc Elegance 270 мл, 1 шт.</a>
+									</div>
+									<div data-da="{.product-checkout}, 599.98, 1" class="product-checkout__price">
+										318 грн <span>350 грн</span>
+									</div>
+									<div data-min="1" data-max="999" class="counter">
+										<button class="counter__btn counter__btn--decrement" type="button">-</button>
+										<input type="number" value="1">
+										<button class="counter__btn counter__btn--increment" type="button">+</button>
+									</div>
+								</div>
+								<div class="product-checkout__total">
+									1 908 грн.
+								</div>
+								<button data-da="{.product-checkout} .product-checkout__body, 599.98, last" class="product-checkout__favorite">
+								</button>
+							</div>
+							<div class="offer-popup__item product-checkout">
+								<button data-da="{.product-checkout} .product-checkout__header, 599.98, last" class="product-checkout__remove _icon-cross">
+								</button>
+								<a href="#" data-da="{.product-checkout} .product-checkout__body, 599.98, first" class="product-checkout__image-link">
+									<img src="img/products/05.webp" alt="Image" class="ibg ibg--contain">
+								</a>
+								<div class="product-checkout__body">
+									<div data-da="{.product-checkout}, 599.98, first" class="product-checkout__header">
+										<a href="#" class="product-checkout__link">Келих Arcoroc Elegance 270 мл, 1 шт.</a>
+									</div>
+									<div data-da="{.product-checkout}, 599.98, 1" class="product-checkout__price">
+										318 грн <span>350 грн</span>
+									</div>
+									<div data-min="1" data-max="999" class="counter">
+										<button class="counter__btn counter__btn--decrement" type="button">-</button>
+										<input type="number" value="1">
+										<button class="counter__btn counter__btn--increment" type="button">+</button>
+									</div>
+								</div>
+								<div class="product-checkout__total">
+									1 908 грн.
+								</div>
+								<button data-da="{.product-checkout} .product-checkout__body, 599.98, last" class="product-checkout__favorite">
+								</button>
+							</div>
+						</div>
+						<div class="offer-popup__summary summary-offer">
+							<div class="summary-offer__item">
+								Сума пропозиції:
+								<span>503 684 грн.</span>
+							</div>
+							<div class="summary-offer__item summary-offer__item--gray">
+								Економія:
+								<span>110 615 грн.</span>
+							</div>
+							<div class="summary-offer__item summary-offer__item--total">
+								Разом:
+								<span>397 065 грн.</span>
+							</div>
+						</div>
+						<form action="#" class="offer-popup__form">
+							<div class="offer-popup__fields">
+								<div class="offer-popup__field offer-popup__field--full field">
+									<div class="field__label"><span>*</span>Імʼя або назва компанії</div>
+									<input type="text" required placeholder="Олексій Іванов" class="field__input input">
+								</div>
+								<div class="offer-popup__field field">
+									<div class="field__label"><span>*</span>Телефон</div>
+									<input type="text" required placeholder="+38" class="field__input input">
+								</div>
+								<div class="offer-popup__field field">
+									<div class="field__label"><span>*</span>E-mail</div>
+									<input type="email" required placeholder="Ivanov@gmail.com" class="field__input input">
+								</div>
+							</div>
+							<button class="offer-popup__submit button button--green">
+								Оформити пропозицію
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="wishlist-popup" aria-hidden="true" class="popup popup--wishlist">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="wishlist-popup">
+						<button type="button" class="wishlist-popup__close close-popup _icon-cross"></button>
+						<div class="wishlist-popup__label">Товар збережено до Списку бажань</div>
+						<img src="img/popup/wishlist.svg" alt="Image" class="wishlist-popup__image">
+						<div class="wishlist-popup__footer">
+							<div class="wishlist-popup__label">
+								<a href="#">Продовжити покупки</a>
+							</div>
+							<div class="wishlist-popup__label">
+								<span class="pc-only">Переглянути</span> <a href="#">Список бажань</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="history-popup" aria-hidden="true" class="popup popup--history">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="history-popup">
+						<div class="history-popup__header">
+							<h3 class="history-popup__title">
+								Історія замовлення
+							</h3>
+							<button type="button" class="history-popup__close close-popup _icon-cross"></button>
+						</div>
+						<div class="history-popup__body">
+							<div class="history-popup__item">
+								<div class="history-popup__status _active">
+									Виконано
+								</div>
+								<div class="history-popup__timestamp">
+									05.04.2024 16:12
+								</div>
+							</div>
+							<div class="history-popup__item">
+								<div class="history-popup__status">
+									Очікує клієнта в пункті самовивозу
+								</div>
+								<div class="history-popup__timestamp">
+									05.04.2024 16:12
+								</div>
+							</div>
+							<div class="history-popup__item">
+								<div class="history-popup__status">
+									Доставляється
+								</div>
+								<div class="history-popup__timestamp">
+									05.04.2024 16:12
+								</div>
+							</div>
+							<div class="history-popup__item">
+								<div class="history-popup__status">
+									Передано до служби доставки
+								</div>
+								<div class="history-popup__timestamp">
+									05.04.2024 16:12
+								</div>
+							</div>
+							<div class="history-popup__item">
+								<div class="history-popup__status">
+									Обробляється
+								</div>
+								<div class="history-popup__timestamp">
+									05.04.2024 16:12
+								</div>
+							</div>
+							<div class="history-popup__item">
+								<div class="history-popup__status">
+									Нове замовлення
+								</div>
+								<div class="history-popup__timestamp">
+									05.04.2024 16:12
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<main class="page page--gray">
 			<div class="page__breadcrumbs breadcrumbs">
 				<div class="breadcrumbs__container">
@@ -5655,22 +2912,31 @@
 						Особистий кабінет
 					</h1>
 					<div class="account__items">
-						<a href="#" class="account__link link-account _icon-user">
+						<button data-popup="#auth-popup" class="account__link link-account _icon-user">
+							Авторизація
+						</button>
+						<a href="info-account.html" class="account__link link-account _icon-user">
 							Особиста інформація
 						</a>
 						<a href="wishlist-account.html" class="account__link link-account _icon-heart">
 							Список бажань
 							<span>4</span>
 						</a>
-						<a href="#" class="account__link link-account _icon-list">
+						<button data-popup="#wishlist-popup" class="account__link link-account _icon-heart">
+							Додано в список бажаного
+						</button>
+						<a href="history-account.html" class="account__link link-account _icon-list">
 							Історія замовлень
 						</a>
-						<a href="#" class="account__link link-account _icon-libra">
+						<a href="comparison.html" class="account__link link-account _icon-libra">
 							Список порівнянь
 							<span>3</span>
 						</a>
-						<a href="#" class="account__link link-account _icon-bag">
+						<a href="offer-account.html" class="account__link link-account _icon-bag">
 							Комерційні пропозиції
+						</a>
+						<a href="error-account.html" class="account__link link-account _icon-cross">
+							Помилка
 						</a>
 						<a href="#" class="account__link link-account _icon-cart">
 							Кошик
@@ -5852,7 +3118,10 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241115025723"></script>
+	<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+?_v=20241128054220"></script>
+	<script src="js/app.min.js?_v=20241128054220"></script>
 </body>
 
 </html>
