@@ -5108,7 +5108,7 @@ body::after {
   align-items: center;
   gap: .875rem
 }
-.header-offer__images {
+.header-offer__images-content {
   display: flex;
   gap: 1.0625rem
 }
@@ -5536,10 +5536,10 @@ body::after {
   font-size: .625rem
 }
 .comparison__wrapper {
-  position: relative
+  position: relative;
+  grid-column: 3/6
 }
 .body-comparison {
-  grid-column: 3/6;
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;

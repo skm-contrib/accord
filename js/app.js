@@ -4215,10 +4215,12 @@
             const offerBlock = offerHeader.closest(".offer-account__block");
             if (offerBlock) {
                 const offerBody = offerBlock.querySelector(".offer-account__body");
+                const offerImages = offerHeader.querySelector(".header-offer__images._dynamic_adapt_");
                 if (!offerBody.classList.contains("_slide")) {
                     _slideToggle(offerBody);
                     offerHeader.classList.toggle("_active");
                 }
+                if (offerImages && !offerImages.classList.contains("_slide")) _slideToggle(offerImages);
             }
         }
         if (e.target.closest("[data-pswd-hide]")) {
@@ -4258,10 +4260,6 @@
         }));
         input.addEventListener("input", validateInput);
         input.addEventListener("blur", validateInput);
-    }));
-    const origSelect = document.querySelector("#category");
-    if (origSelect) document.addEventListener("selectCallback", (e => {
-        if (e.detail.select === origSelect) console.log(e.detail.select.selectedOptions[0]);
     }));
     const scrollContainer = document.querySelector(".body-comparison");
     if (scrollContainer) {
