@@ -1,0 +1,99 @@
+.menu {
+  // .menu__icon
+  &__icon {
+  }
+  // .menu__body
+  &__body {
+    @media (max-width: $tablet) {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: -100%;
+      top: 0;
+      overflow: auto;
+      padding: toRem(50) toRem(15) toRem(15) toRem(30);
+      transition: left 0.3s;
+      &::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: toRem(70);
+        left: -100%;
+        top: 0;
+        transition: left 0.3s;
+        z-index: 2;
+      }
+      .menu-open & {
+        left: 0;
+        &::before {
+          left: 0;
+        }
+      }
+    }
+  }
+  // .menu__list
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: toRem(40);
+    @media (max-width: $tablet) {
+    }
+  }
+  // .menu__item
+  &__item {
+    color: #1a1a1c;
+    font-size: toRem(16);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  // .menu__link
+  &__link {
+    transition: color 0.3s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: #249c6b;
+      }
+    }
+    @media (max-width: $tablet) {
+    }
+  }
+}
+
+//Burger Icon
+.icon-menu {
+  display: none;
+  @media (max-width: $tablet) {
+    display: block;
+    position: relative;
+    align-self: center;
+    flex-shrink: 0;
+    width: toRem(24);
+    height: toRem(16);
+    z-index: 5;
+    @media (any-hover: none) {
+      cursor: default;
+    }
+    span,
+    &::before,
+    &::after {
+      content: "";
+      transition: all 0.3s ease 0s;
+      right: 0;
+      position: absolute;
+      width: 100%;
+      height: toRem(2);
+      border-radius: toRem(5);
+      background-color: #249c6b;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    span {
+      top: calc(50% - toRem(1));
+    }
+  }
+}

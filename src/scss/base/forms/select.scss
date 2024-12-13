@@ -1,0 +1,235 @@
+// <SELECT>
+// Сніппет (HTML): sel
+.select {
+  min-width: 0;
+  position: relative;
+
+  &__body {
+    position: relative;
+  }
+  // .select__title
+  &__title {
+    color: inherit;
+    text-align: left;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    .select_lang & {
+      color: #1a1a1c;
+      border: none;
+      font-weight: 600;
+      font-size: toRem(16);
+      background-color: transparent;
+    }
+    .select_border & {
+      font-size: toRem(16);
+      line-height: 1.4;
+      color: #4e4f53;
+      border-radius: toRem(8);
+      border: toRem(1) solid #1a1a1c;
+      background-color: #ebebec;
+    }
+    .select_checkout & {
+      font-size: toRem(16);
+      line-height: 1.4;
+      color: #d8d8d9;
+      border-radius: toRem(8);
+      height: toRem(46);
+      border: toRem(1) solid #1a1a1c;
+    }
+    .select_checkout._select-active & {
+      color: #1a1a1c;
+    }
+    ._select-open:not(.select--show-top) & {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-color: transparent;
+    }
+    ._select-open.select--show-top & {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-top-color: transparent;
+    }
+  }
+  // .select__value
+  &__value {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    height: toRem(30);
+    padding: 0 toRem(15);
+    gap: toRem(10);
+    > * {
+      flex: 1 1 auto;
+    }
+    .select_border & {
+      padding: toRem(8) toRem(14);
+      height: auto;
+    }
+    .select_checkout & {
+      padding: toRem(5) toRem(14);
+    }
+    &:after {
+      content: "\e907";
+      font-family: "icons";
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      color: #4e4f53;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: all 0.3s ease 0s;
+      display: block;
+      font-size: toRem(16);
+      ._select-open & {
+        transform: rotate(-180deg);
+      }
+    }
+    .select_lang & {
+      padding: 0 toRem(5);
+    }
+    &._select-pseudo-label {
+      &::before {
+        content: attr(data-pseudo-label);
+        opacity: 0.5;
+      }
+    }
+  }
+  // .select__content
+  &__content {
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  // .select__text
+  &__text {
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+  }
+  // .select__options
+  &__options {
+    color: #000;
+    position: absolute;
+    top: calc(100% - toRem(1));
+    border-radius: 0 0 4px 4px;
+    min-width: 100%;
+    left: 0;
+    background-color: #fff;
+    border-top: 0;
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    padding: 10px 0px 5px 0px;
+    .select_lang & {
+      padding: 0;
+      border: none;
+    }
+    .select_border & {
+      background-color: #ebebec;
+      border-radius: toRem(8);
+      border: toRem(1) solid #1a1a1c;
+    }
+    .select_checkout & {
+      border: toRem(1) solid #1a1a1c;
+      border-radius: toRem(8);
+    }
+    ._select-open:not(.select--show-top) & {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-top-color: transparent;
+    }
+    .select--show-top._select-open & {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-color: transparent;
+    }
+  }
+  // .select__scroll
+  &__scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    // Максимальна висота
+    max-height: toRem(200);
+    // Стилі скроллбару
+    .simplebar-scrollbar {
+      &::before {
+        //opacity: 1;
+      }
+    }
+  }
+  // .select__option
+  &__option {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    padding: 5px 15px;
+    color: inherit;
+    .select_checkout & {
+      font-size: toRem(16);
+    }
+    .select_lang & {
+      font-size: toRem(16);
+      padding: toRem(5);
+    }
+    &._select-selected {
+      background-color: #eee;
+    }
+    .select_border & {
+      font-size: toRem(16);
+      line-height: 1.4;
+      color: #4e4f53;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        background: #d9d9d9;
+      }
+    }
+  }
+
+  // Конструкція додаткових даних
+  &__row {
+    display: inline-flex;
+    align-items: center;
+  }
+  &__asset {
+  }
+  &__text {
+  }
+
+  &--show-top {
+    .select__options {
+      top: auto;
+      bottom: calc(100% - toRem(1));
+    }
+  }
+
+  // Стан селекту
+  &._select-open {
+  }
+  &._select-disabled {
+  }
+  &._select-active {
+  }
+  &._select-focus {
+  }
+  &._select-multiple {
+  }
+  &._select-checkbox {
+  }
+}
+
+// Тег
+._select-tag {
+  cursor: pointer;
+}

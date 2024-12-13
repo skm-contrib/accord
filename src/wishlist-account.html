@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Список бажань"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page page--gray">
+      <div class="page__breadcrumbs breadcrumbs">
+        <div class="breadcrumbs__container">
+          <a href="#" class="breadcrumbs__link _icon-house"></a>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Головна</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#footer">Список бажань</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="page__account account">
+        <div class="account__container">
+          <div class="account__content">
+            <div class="account__aside aside-account">
+              <h2 class="aside-account__title">Особистий кабінет</h2>
+              <a href="info-account.html" class="aside-account__link link-account _icon-user">
+                Особиста інформація
+              </a>
+              <a href="wishlist.html" class="aside-account__link link-account _active _icon-heart">
+                Список бажань
+                <span>4</span>
+              </a>
+              <a href="history-account.html" class="aside-account__link link-account _icon-list">
+                Історія замовлень
+              </a>
+              <a href="comparison.html" class="aside-account__link link-account _icon-libra">
+                Список порівнянь
+                <span>3</span>
+              </a>
+              <a href="offer-account.html" class="aside-account__link link-account _icon-bag">
+                Комерційні пропозиції
+              </a>
+              <a href="#" class="aside-account__link link-account _icon-cart">
+                Кошик
+                <span>3</span>
+              </a>
+              <a href="#" class="aside-account__link link-account link-account--exit _icon-exit">
+                Вийти
+              </a>
+            </div>
+            <div class="account__body">
+              <div class="account__wishlist wishlist-account">
+                <h1 class="wishlist-account__title title-account title-account--margin">
+                  Список бажань
+                </h1>
+                <div class="wishlist-account__header">
+                  <div class="wishlist-account__info">
+                    <span>Збережено:</span>
+                    4 товара На суму 12 384 грн.
+                  </div>
+                  <select name="form[]" data-class-modif="border">
+                    <option value="1" selected>За датою додавання</option>
+                    <option value="2">Спочатку дорожчі</option>
+                    <option value="3">Спочатку дешевші</option>
+                    <option value="4">За рейтингом</option>
+                  </select>
+                </div>
+                <div class="wishlist-account__items">
+                  @@include('html/products/_item-product-wishlist.htm',{})
+                  @@include('html/products/_item-product-wishlist.htm',{})
+                  @@include('html/products/_item-product-wishlist.htm',{})
+                  @@include('html/products/_item-product-wishlist.htm',{})
+                  @@include('html/products/_item-product-wishlist.htm',{})
+                  @@include('html/products/_item-product-wishlist.htm',{})
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

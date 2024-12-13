@@ -1,0 +1,50 @@
+.splide__arrow {
+  align-items: start;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  opacity: 1;
+  padding: 0;
+  position: static;
+  top: 0;
+  transform: none;
+  width: auto;
+  z-index: 1;
+}
+.splide__arrows--ttb .splide__arrow {
+  left: 0;
+  transform: none;
+}
+.splide__pagination {
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  position: static;
+  z-index: 1;
+  align-items: start;
+  display: block;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  margin: 0;
+}
+
+.splide__pagination-page {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  display: inline-block;
+  height: auto;
+  margin: 0;
+  opacity: 1;
+  padding: 0;
+  position: static;
+  transition: none;
+  width: auto;
+}
+
+.splide__slide.is-active {
+  border: none;
+}

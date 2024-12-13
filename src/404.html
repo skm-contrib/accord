@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"404"
+})
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="error-page">
+                <div class="error-page__container">
+                    <div class="error-page__content">
+                        <h1>404</h1>
+                        <div class="error-page__message">
+                            <h2 class="error-page__subtitle">Нічого не знайдено!</h2>
+
+                            <p class="error-page__text">Але, хто шукає - той завжди знайде!</p>
+                            <a href="#" class="button--green error-page__button button">Повернутися на головну</a>
+                        </div>
+                    </div>
+                    <div class="error-page__image">
+                        <img src="img/404.png" alt="404">
+                    </div>
+                </div>
+                <div class="error-page__container">
+                    <div class="error-page__mob">
+                        <p class="error-page__text">Але, хто шукає - той завжди знайде!</p>
+                        <a href="#" class="button--green error-page__button button">Повернутися на головну</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

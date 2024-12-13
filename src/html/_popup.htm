@@ -1,0 +1,297 @@
+<div id="popup-gallery" aria-hidden="true" class="popup popup--gallery">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрити</button>
+			<div class="gallery-popup">
+				<div class="gallery-popup__header header-popup">
+					<h2 class="header-popup__title">Піч вугільна Kopa Basic 301</h2>
+					<div class="header-popup__body">
+						<div class="header-popup__thumb">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="auth-popup" aria-hidden="true" class="popup popup--auth">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="auth-popup">
+				<img src="img/popup/auth/bg.webp" alt="Image" class="auth-popup__bg ibg">
+				<img src="img/header/main-logo.svg" alt="Image" class="auth-popup__logo">
+				<div class="auth-popup__body">
+					<div data-tabs class="tabs-auth">
+						<div class="tabs-auth__header">
+							<nav data-tabs-titles class="tabs-auth__navigation">
+								<button type="button" class="tabs-auth__title tab-title _tab-active">Вхід</button>
+								<button type="button" class="tabs-auth__title tab-title">Реєстрація</button>
+							</nav>
+							<button data-close class="tabs-auth__close close-popup _icon-cross"></button>
+						</div>
+						<div data-tabs-body class="tabs-auth__content">
+							<div class="tabs-auth__body">
+								<form action="#" method="post" class="tabs-auth__form">
+									<div class="tabs-auth__fields">
+										<div class="tabs-auth__field field">
+											<div class="field__label">E-mail</div>
+											<input type="email" required placeholder="Ivanov@gmail.com" class="field__input input">
+										</div>
+										<div class="tabs-auth__field field">
+											<div class="field__label">Пароль</div>
+											<div class="field__input-wrapper">
+												<input type="password" required placeholder="Введіть пароль" class="field__input input">
+												<button data-pswd-hide type="button" class="field__hide-btn _icon-eye-hidden"></button>
+											</div>
+										</div>
+										<a href="#" class="tabs-auth__recovery-link">Забули пароль?</a>
+									</div>
+									<button class="tabs-auth__submit button button--green">Увійти</button>
+								</form>
+								<div class="tabs-auth__social social-auth">
+									<div class="social-auth__label">
+										або продовжити за допомогою
+									</div>
+									<div class="social-auth__items">
+										<a href="#" class="social-auth__item">
+											<img src="img/popup/auth/social/google.svg" alt="Icon" class="ibg ibg--contain">
+										</a>
+										<a href="#" class="social-auth__item">
+											<img src="img/popup/auth/social/apple.svg" alt="Icon" class="ibg ibg--contain">
+										</a>
+										<a href="#" class="social-auth__item">
+											<img src="img/popup/auth/social/facebook.svg" alt="Icon" class="ibg ibg--contain">
+										</a>
+									</div>
+								</div>
+								<div class="tabs-auth__label">
+									Ще не маєте акаунт? <a href="#">Зареєструватись</a>
+								</div>
+							</div>
+							<div class="tabs-auth__body">
+								<form action="#" method="post" class="tabs-auth__form">
+									<div class="tabs-auth__fields">
+										<div class="tabs-auth__field field">
+											<div class="field__label">Прізвище та Ім'я</div>
+											<input type="text" required placeholder="Іванов Іван" class="field__input input">
+										</div>
+										<div class="tabs-auth__field field">
+											<div class="field__label">E-mail</div>
+											<input type="email" required placeholder="Ivanov@gmail.com" class="field__input input">
+										</div>
+										<div class="tabs-auth__field field">
+											<div class="field__label">Пароль</div>
+											<div class="field__input-wrapper">
+												<input type="password" required placeholder="Введіть пароль" class="field__input input">
+												<button data-pswd-hide type="button" class="field__hide-btn _icon-eye-hidden"></button>
+											</div>
+										</div>
+										<div class="tabs-auth__field field">
+											<div class="field__label">Пароль</div>
+											<div class="field__input-wrapper">
+												<input type="password" required placeholder="Введіть пароль" class="field__input input">
+												<button data-pswd-hide type="button" class="field__hide-btn _icon-eye-hidden"></button>
+											</div>
+											<div class="field__warning">
+												Мінімально 8 символів, включаючи одну велику літеру
+											</div>
+										</div>
+									</div>
+									<button class="tabs-auth__submit button button--green">Створити акаунт</button>
+									<div class="tabs-auth__terms">
+										Реєструючись, ви погоджуєтесь з <br>
+										<a href="#">Користувацькою угодою</a> та <a href="#">Правилами користування сайтом</a>
+									</div>
+								</form>
+								<div class="tabs-auth__label">
+									Вже маєте акаунт? <a href="#">Увійти</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="offer-popup" aria-hidden="true" class="popup popup--offer">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="offer-popup">
+				<div class="offer-popup__header">
+					<h2 class="offer-popup__title">
+						Комерційна пропозиція
+					</h2>
+					<button data-close class="offer-popup__button _icon-cross close-popup"></button>
+				</div>
+				<div class="offer-popup__items">
+					<div class="offer-popup__item product-checkout">
+						<button data-da="{.product-checkout} .product-checkout__header, 599.98, last"
+							class="product-checkout__remove _icon-cross">
+						</button>
+						<a href="#" data-da="{.product-checkout} .product-checkout__body, 599.98, first"
+							class="product-checkout__image-link">
+							<img src="img/products/05.webp" alt="Image" class="ibg ibg--contain">
+						</a>
+						<div class="product-checkout__body">
+							<div data-da="{.product-checkout}, 599.98, first" class="product-checkout__header">
+								<a href="#" class="product-checkout__link">Келих Arcoroc Elegance 270 мл, 1 шт.</a>
+							</div>
+							<div data-da="{.product-checkout}, 599.98, 1" class="product-checkout__price">
+								318 грн <span>350 грн</span>
+							</div>
+							@@include('components/_counter.htm',{})
+						</div>
+						<div class="product-checkout__total">
+							1 908 грн.
+						</div>
+						<button data-da="{.product-checkout} .product-checkout__body, 599.98, last"
+							class="product-checkout__favorite">
+						</button>
+					</div>
+					<div class="offer-popup__item product-checkout">
+						<button data-da="{.product-checkout} .product-checkout__header, 599.98, last"
+							class="product-checkout__remove _icon-cross">
+						</button>
+						<a href="#" data-da="{.product-checkout} .product-checkout__body, 599.98, first"
+							class="product-checkout__image-link">
+							<img src="img/products/05.webp" alt="Image" class="ibg ibg--contain">
+						</a>
+						<div class="product-checkout__body">
+							<div data-da="{.product-checkout}, 599.98, first" class="product-checkout__header">
+								<a href="#" class="product-checkout__link">Келих Arcoroc Elegance 270 мл, 1 шт.</a>
+							</div>
+							<div data-da="{.product-checkout}, 599.98, 1" class="product-checkout__price">
+								318 грн <span>350 грн</span>
+							</div>
+							@@include('components/_counter.htm',{})
+						</div>
+						<div class="product-checkout__total">
+							1 908 грн.
+						</div>
+						<button data-da="{.product-checkout} .product-checkout__body, 599.98, last"
+							class="product-checkout__favorite">
+						</button>
+					</div>
+				</div>
+				<div class="offer-popup__summary summary-offer">
+					<div class="summary-offer__item">
+						Сума пропозиції:
+						<span>503 684 грн.</span>
+					</div>
+					<div class="summary-offer__item summary-offer__item--gray">
+						Економія:
+						<span>110 615 грн.</span>
+					</div>
+					<div class="summary-offer__item summary-offer__item--total">
+						Разом:
+						<span>397 065 грн.</span>
+					</div>
+				</div>
+				<form action="#" class="offer-popup__form">
+					<div class="offer-popup__fields">
+						<div class="offer-popup__field offer-popup__field--full field">
+							<div class="field__label"><span>*</span>Імʼя або назва компанії</div>
+							<input type="text" required placeholder="Олексій Іванов" class="field__input input">
+						</div>
+						<div class="offer-popup__field field">
+							<div class="field__label"><span>*</span>Телефон</div>
+							<input type="text" required placeholder="+38" class="field__input input">
+						</div>
+						<div class="offer-popup__field field">
+							<div class="field__label"><span>*</span>E-mail</div>
+							<input type="email" required placeholder="Ivanov@gmail.com" class="field__input input">
+						</div>
+					</div>
+					<button class="offer-popup__submit button button--green">
+						Оформити пропозицію
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="wishlist-popup" aria-hidden="true" class="popup popup--wishlist">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="wishlist-popup">
+				<button type="button" class="wishlist-popup__close close-popup _icon-cross"></button>
+				<div class="wishlist-popup__label">Товар збережено до Списку бажань</div>
+				<img src="img/popup/wishlist.svg" alt="Image" class="wishlist-popup__image">
+				<div class="wishlist-popup__footer">
+					<div class="wishlist-popup__label">
+						<a href="#">Продовжити покупки</a>
+					</div>
+					<div class="wishlist-popup__label">
+						<span class="pc-only">Переглянути</span> <a href="#">Список бажань</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="history-popup" aria-hidden="true" class="popup popup--history">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="history-popup">
+				<div class="history-popup__header">
+					<h3 class="history-popup__title">
+						Історія замовлення
+					</h3>
+					<button type="button" class="history-popup__close close-popup _icon-cross"></button>
+				</div>
+				<div class="history-popup__body">
+					<div class="history-popup__item">
+						<div class="history-popup__status _active">
+							Виконано
+						</div>
+						<div class="history-popup__timestamp">
+							05.04.2024 16:12
+						</div>
+					</div>
+					<div class="history-popup__item">
+						<div class="history-popup__status">
+							Очікує клієнта в пункті самовивозу
+						</div>
+						<div class="history-popup__timestamp">
+							05.04.2024 16:12
+						</div>
+					</div>
+					<div class="history-popup__item">
+						<div class="history-popup__status">
+							Доставляється
+						</div>
+						<div class="history-popup__timestamp">
+							05.04.2024 16:12
+						</div>
+					</div>
+					<div class="history-popup__item">
+						<div class="history-popup__status">
+							Передано до служби доставки
+						</div>
+						<div class="history-popup__timestamp">
+							05.04.2024 16:12
+						</div>
+					</div>
+					<div class="history-popup__item">
+						<div class="history-popup__status">
+							Обробляється
+						</div>
+						<div class="history-popup__timestamp">
+							05.04.2024 16:12
+						</div>
+					</div>
+					<div class="history-popup__item">
+						<div class="history-popup__status">
+							Нове замовлення
+						</div>
+						<div class="history-popup__timestamp">
+							05.04.2024 16:12
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

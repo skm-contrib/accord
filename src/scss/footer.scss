@@ -1,0 +1,506 @@
+.menu-footer {
+  display: flex;
+  gap: toRem(30);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: toEm(1099.98)) {
+    justify-content: start;
+    @include adaptiveValue("gap", 88, 20, 0, 767.98, 320);
+  }
+  &__block {
+  }
+
+  &__title {
+    color: #1a1a1a;
+    font-size: toRem(20);
+    font-weight: 600;
+    line-height: 1.4;
+    &:not(:last-child) {
+      margin-bottom: toRem(12);
+    }
+    @media (max-width: $mobile) {
+      font-size: toRem(18);
+      &:not(:last-child) {
+        margin-bottom: toRem(4);
+      }
+    }
+  }
+
+  &__list {
+  }
+
+  &__item {
+    color: #888;
+    font-size: toRem(16);
+    &:not(:last-child) {
+      margin-bottom: toRem(12);
+    }
+    @media (max-width: $mobile) {
+      font-size: toRem(13);
+      &:not(:last-child) {
+        margin-bottom: toRem(4);
+      }
+    }
+  }
+
+  &__link {
+    transition: color 0.3s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}
+.contacts-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: toRem(15);
+  @media (max-width: toEm(1099.98)) {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  &__block {
+    flex-shrink: 0;
+  }
+
+  &__title {
+    color: #1a1a1a;
+    font-size: toRem(20);
+    font-weight: 600;
+    line-height: 1.4;
+    &:not(:last-child) {
+      margin-bottom: toRem(8);
+    }
+    @media (max-width: $mobile) {
+      font-size: toRem(18);
+      &:not(:last-child) {
+        margin-bottom: toRem(17);
+      }
+    }
+  }
+
+  &__list {
+  }
+
+  &__item {
+    color: #000;
+    font-size: toRem(14);
+    line-height: 1.4;
+    &:not(:last-child) {
+      margin-bottom: toRem(8);
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: toRem(4);
+    transition: color 0.3s;
+    span {
+      flex-shrink: 0;
+    }
+    &::before {
+      font-size: toRem(16);
+      flex: 0 0 toRem(16);
+      color: #4e4f53;
+      transition: color 0.3s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: $accent;
+        &::before {
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  &__social {
+    .social-component__label {
+      @media (max-width: toEm(1099.98)) {
+        display: none;
+      }
+    }
+  }
+}
+
+.footer {
+  @include adaptiveValue("padding-top", 60, 30);
+  @include adaptiveValue("padding-bottom", 36, 30);
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include adaptiveValue("gap", 88, 30, 0, $containerWidth, 1099.98);
+    &:not(:last-child) {
+      margin-bottom: toRem(27);
+      @media (max-width: toEm(600)) {
+        margin-bottom: toRem(16);
+      }
+    }
+  }
+
+  &__info {
+    flex: 0 1 toRem(432);
+    @media (max-width: $mobile) {
+      flex-basis: toRem(317);
+    }
+    @media (max-width: toEm(599.98)) {
+      flex-basis: auto;
+    }
+  }
+
+  &__menu {
+    flex-grow: 1;
+    flex-shrink: 0;
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+    @media (max-width: toEm(599.98)) {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    &:not(:last-child) {
+      margin-bottom: toRem(14);
+    }
+    @media (max-width: toEm(599.98)) {
+      display: none;
+    }
+  }
+
+  &__copy {
+  }
+}
+.info-footer {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(20);
+  @media (max-width: $mobile) {
+    gap: toRem(8);
+  }
+  @media (max-width: toEm(599.98)) {
+    gap: toRem(14);
+  }
+  &__image {
+    width: toRem(80);
+    height: toRem(61);
+  }
+
+  &__text {
+    font-size: toRem(16);
+    line-height: 1.4;
+    @media (max-width: $mobile) {
+      font-size: toRem(13);
+    }
+    @media (max-width: toEm(599.98)) {
+      font-size: toRem(11);
+    }
+  }
+}
+
+.social-component {
+  &__label {
+    color: #1a1a1a;
+    font-size: toRem(16);
+    line-height: 140%;
+    &:not(:last-child) {
+      margin-bottom: toRem(8);
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: toRem(24);
+    flex-wrap: wrap;
+    @media (max-width: $mobile) {
+      gap: toRem(14);
+    }
+  }
+
+  &__item {
+    width: toRem(32);
+    height: toRem(32);
+    font-size: toRem(16);
+    color: #fff;
+    background-color: $accent;
+    border-radius: 50%;
+    @extend %f-center;
+    transition: all 0.3s;
+    @media (max-width: $mobile) {
+      width: toRem(30);
+      height: toRem(30);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #fff;
+        color: $accent;
+      }
+    }
+  }
+}
+.copy-footer {
+  &__text {
+    font-size: toRem(13);
+    line-height: 1.4;
+    &:not(:last-child) {
+      margin-bottom: toRem(18.5);
+    }
+    @media (max-width: $mobile) {
+      max-width: toRem(430);
+    }
+    @media (max-width: toEm(599.98)) {
+      max-width: 100%;
+      font-size: toRem(11);
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: toRem(15);
+    flex-wrap: wrap;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+    @media (max-width: toEm(600)) {
+      flex-direction: column-reverse;
+      align-items: stretch;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: toRem(14);
+    flex-wrap: wrap;
+    @media (max-width: $mobile) {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    color: #888;
+    font-size: toRem(13);
+    @media (max-width: toEm(600)) {
+      font-size: toRem(11);
+    }
+  }
+
+  &__link {
+    transition: color 0.3s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  &__label {
+    color: #888;
+    font-size: toRem(13);
+    justify-content: start;
+    @media (min-width: $mobile) {
+      flex-grow: 1;
+      text-align: center;
+      justify-content: space-between;
+    }
+    @media (max-width: toEm(600)) {
+      text-align: center;
+      font-size: toRem(11);
+    }
+  }
+
+  &__image {
+    width: toRem(100);
+    height: toRem(27);
+    @media (max-width: toEm(600)) {
+      display: none;
+    }
+  }
+}
+
+.mobile-bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: toRem(8);
+  z-index: 20;
+  @media (min-width: $mobile) {
+    display: none;
+  }
+  &__item {
+    padding: toRem(0) toRem(10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #3f594e;
+    font-size: toRem(12);
+    line-height: 1.4;
+    @media (max-width: toEm(379.98)) {
+      padding: 0 toRem(5);
+    }
+  }
+
+  &__icon {
+    position: relative;
+    font-size: toRem(22);
+    color: #3f594e;
+  }
+  &__count {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(toRem(2), toRem(-2));
+    height: toRem(14);
+    width: toRem(14);
+    border-radius: 50%;
+    color: #fff;
+    background-color: #f00;
+    font-size: toRem(6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.contacts-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: toRem(43);
+  z-index: 999;
+  bottom: toRem(43);
+  @media (max-width: $mobile) {
+    bottom: toRem(70);
+  }
+  &__button {
+    position: relative;
+    width: toRem(70);
+    height: toRem(70);
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #6f4a8f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $mobile) {
+      width: toRem(40);
+      height: toRem(40);
+    }
+    &:not(:last-child) {
+      margin-bottom: toRem(27);
+    }
+    &::before {
+      font-size: toRem(30);
+      color: #fff;
+      @media (max-width: $mobile) {
+        font-size: toRem(20);
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #bfafcd;
+      width: calc(100% + toRem(10));
+      height: calc(100% + toRem(10));
+      border-radius: 50%;
+      z-index: -1;
+      transition: transform 0.5s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        &::after {
+          transform: translate(-50%, -50%) scale(0.8);
+        }
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(8);
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  &__item {
+    width: toRem(60);
+    height: toRem(60);
+    border-radius: 50%;
+    background-color: #6f4a8f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transform: scale(0);
+    @media (any-hover: hover) {
+      &:hover::before {
+        transform: scale(0.8);
+      }
+    }
+    @media (max-width: $mobile) {
+      height: toRem(40);
+      width: toRem(40);
+    }
+    ._spoiler-active + * & {
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          transition: all 0.3s #{$i * 0.1}s;
+        }
+      }
+      transform: scale(1);
+    }
+    &::before {
+      font-size: toRem(25);
+      color: #fff;
+      transition: transform 0.3s;
+      @media (max-width: $mobile) {
+        font-size: toRem(16);
+      }
+    }
+    &._icon-s-tg {
+      background: linear-gradient(180deg, #37aee2 0%, #1e96c8 100%);
+    }
+    &._icon-s-vbr {
+      background-color: #7360f2;
+      &::before {
+        font-size: toRem(30);
+        @media (max-width: $mobile) {
+          font-size: toRem(20);
+        }
+      }
+    }
+    &._icon-phone {
+      background-color: #249c6b;
+    }
+    &._icon-chat {
+      @media (max-width: $mobile) {
+        font-size: toRem(20);
+      }
+    }
+    &._icon-cross {
+      background-color: #4e4f53;
+      &::before {
+        font-size: toRem(18);
+      }
+    }
+  }
+}

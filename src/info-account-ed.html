@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Особистий кабінет"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page page--gray">
+      <div class="page__breadcrumbs breadcrumbs">
+        <div class="breadcrumbs__container">
+          <a href="#" class="breadcrumbs__link _icon-house"></a>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Головна</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#footer">Список бажань</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="page__account account">
+        <div class="account__container">
+          <div class="account__content">
+            <div class="account__aside aside-account">
+              <h2 class="aside-account__title">Особистий кабінет</h2>
+              <a href="info-account.html" class="aside-account__link link-account _icon-user">
+                Особиста інформація
+              </a>
+              <a href="info-account-ed.html" class="aside-account__link  link-account _icon-user">
+                Особиста інформація (ред.)
+              </a>
+              <a href="wishlist-account.html" class="aside-account__link link-account _icon-heart">
+                Список бажань
+                <span>4</span>
+              </a>
+              <a href="history-account.html" class="aside-account__link _active link-account _icon-list">
+                Історія замовлень
+              </a>
+              <a href="comparison.html" class="aside-account__link link-account _icon-libra">
+                Список порівнянь
+                <span>3</span>
+              </a>
+              <a href="offer-account.html" class="aside-account__link link-account _icon-bag">
+                Комерційні пропозиції
+              </a>
+              <a href="#" class="aside-account__link link-account _icon-cart">
+                Кошик
+                <span>3</span>
+              </a>
+              <a href="#" class="aside-account__link link-account link-account--exit _icon-exit">
+                Вийти
+              </a>
+            </div>
+            <div class="account__body">
+              <div class="account__info info-account">
+                <h1 class="info-account__title title-account">
+                  Історія замовлень
+                </h1>
+                <div class="info-account__block">
+                  <h3 class="info-account__block-title title-product _icon-user">
+                    Користувач
+                  </h3>
+                  <div class="info-account__fields">
+                    <div class="info-account__field field">
+                      <div class="field__label">Імʼя та Прізвище</div>
+                      <input type="text" value="Олексій Іванов" required placeholder="Олексій Іванов"
+                        class="field__input input">
+                    </div>
+                    <div class="info-account__field field">
+                      <div class="field__label">Телефон</div>
+                      <input type="text" value="+380681112233" required placeholder="+38" class="field__input input">
+                    </div>
+                    <div class="info-account__field field">
+                      <div class="field__label">E-mail</div>
+                      <input type="email" value="Ivanov@gmail.com" required placeholder="Ivanov@gmail.com"
+                        class="field__input input">
+                    </div>
+                    <div class="info-account__field field">
+                      <div class="field__label">Компанія</div>
+                      <input type="text" value="Кафетерій" required placeholder="Назва компанії"
+                        class="field__input input">
+                    </div>
+                  </div>
+                  <div class="info-account__actions">
+                    <button class="info-account__button button button--green">Редагувати</button>
+                    <button class="info-account__button button button--border">Скасувати</button>
+                  </div>
+                </div>
+                <div class="info-account__block">
+                  <h3 class="info-account__block-title title-product _icon-location-circle">
+                    Мої адреси
+                  </h3>
+                  <div class="info-account__address-edit address-edit">
+                    <div class="address-edit__main field">
+                      <div class="field__label">Основна адреса доставки</div>
+                      <select name="form[]" data-class-modif="checkout">
+                        <option value="1">м. Київ, Хрещатик 1</option>
+                        <option value="2">м. Київ, Хрещатик 2</option>
+                      </select>
+                    </div>
+                    <div class="address-edit__item address-edit__item--home">
+                      <div class="address-edit__field field">
+                        <div class="field__label">Місто</div>
+                        <select name="form[]" data-class-modif="checkout">
+                          <option value="1">Київ</option>
+                          <option value="2">Киїнка - Чернігівська обл., Чернігівський р-н. - Киїнська сільрада
+                          </option>
+                          <option value="3">Київець - Львівська обл., Стрийський р-н. (Миколаївський р-н.) -
+                            Розвадівська сільрада</option>
+                          <option value="4">Київське - Запорізька обл., Запорізький р-н. (Новомиколаївський р-н.) -
+                            Новомиколаївська сільрада</option>
+                        </select>
+                      </div>
+                      <div class="address-edit__field field">
+                        <div class="field__label">Вулиця</div>
+                        <select name="form[]" data-class-modif="checkout">
+                          <option value="1">Хрещатик</option>
+                          <option value="2">Хрещатик</option>
+                          <option value="3">Хрещатик</option>
+                        </select>
+                      </div>
+                      <div class="address-edit__field field">
+                        <div class="field__label">Будинок</div>
+                        <input type="text" value="1" required placeholder="Будинок" class="field__input input">
+                      </div>
+                      <button class="address-edit__remove _icon-trash"></button>
+                    </div>
+                    <div class="address-edit__item address-edit__item--post">
+                      <div class="address-edit__field field">
+                        <div class="field__label">Місто</div>
+                        <select name="form[]" data-class-modif="checkout">
+                          <<option value="1">Київ</option>
+                            <option value="2">Киїнка - Чернігівська обл., Чернігівський р-н. - Киїнська сільрада
+                            </option>
+                            <option value="3">Київець - Львівська обл., Стрийський р-н. (Миколаївський р-н.) -
+                              Розвадівська сільрада</option>
+                            <option value="4">Київське - Запорізька обл., Запорізький р-н. (Новомиколаївський р-н.) -
+                              Новомиколаївська сільрада</option>
+                        </select>
+                      </div>
+                      <div class="address-edit__field field">
+                        <div class="field__label">Відділення</div>
+                        <select name="form[]" data-class-modif="checkout">
+                          <option value="1">Відділення #1</option>
+                          <option value="2">Відділення #2</option>
+                          <option value="3">Відділення #3</option>
+                        </select>
+                      </div>
+                      <button class="address-edit__remove _icon-trash"></button>
+                    </div>
+                    <div class="address-edit__new new-address-acc">
+                      <div class="new-address-acc__label">
+                        Додати нову адресу:
+                      </div>
+                      <div class="new-address-acc__radios">
+                        <label class="new-address-acc__radiobox radiobox">
+                          <div class="radiobox__icon"></div>
+                          Адресна доставка
+                          <input checked type="radio" name="address-type">
+                        </label>
+                        <label class="new-address-acc__radiobox radiobox">
+                          <div class="radiobox__icon"></div>
+                          Відділення Нової пошти
+                          <input type="radio" name="address-type">
+                        </label>
+                      </div>
+                      <!--Нова пошта-->
+                      <!--
+                      <div class="new-address-acc__body">
+                        <div class="address-edit__field field">
+                          <div class="field__label">Місто</div>
+                          <select name="form[]" data-class-modif="checkout">
+                            <option selected value="">Місто</option>
+                            <option value="1">Київ</option>
+                            <option value="2">Киїнка - Чернігівська обл., Чернігівський р-н. - Киїнська сільрада
+                            </option>
+                            <option value="3">Київець - Львівська обл., Стрийський р-н. (Миколаївський р-н.) -
+                              Розвадівська сільрада</option>
+                            <option value="4">Київське - Запорізька обл., Запорізький р-н. (Новомиколаївський р-н.) -
+                              Новомиколаївська сільрада</option>
+                          </select>
+                        </div>
+                        <div class="address-edit__field field">
+                          <div class="field__label">Відділення Нової пошти</div>
+                          <select name="form[]" data-class-modif="checkout">
+                            <option selected value="">Відділення</option>
+                            <option value="1">Відділення #1</option>
+                            <option value="2">Відділення #2</option>
+                            <option value="3">Відділення #3</option>
+                          </select>
+                        </div>
+                      </div>
+                      -->
+                      <!-- Адресна доставка -->
+                      <div class="new-address-acc__body new-address-acc__body--home">
+                        <div class="address-edit__field field">
+                          <div class="field__label">Місто</div>
+                          <select name="form[]" data-class-modif="checkout">
+                            <option value="1">Київ</option>
+                            <option value="2">Киїнка - Чернігівська обл., Чернігівський р-н. - Киїнська сільрада
+                            </option>
+                            <option value="3">Київець - Львівська обл., Стрийський р-н. (Миколаївський р-н.) -
+                              Розвадівська сільрада</option>
+                            <option value="4">Київське - Запорізька обл., Запорізький р-н. (Новомиколаївський р-н.) -
+                              Новомиколаївська сільрада</option>
+                          </select>
+                        </div>
+                        <div class="address-edit__field field">
+                          <div class="field__label">Вулиця</div>
+                          <select name="form[]" data-class-modif="checkout">
+                            <option value="1">Хрещатик</option>
+                            <option value="2">Хрещатик</option>
+                            <option value="3">Хрещатик</option>
+                          </select>
+                        </div>
+                        <div class="address-edit__field field">
+                          <div class="field__label">Будинок</div>
+                          <input type="text" value="1" required placeholder="Будинок" class="field__input input">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="address-edit__new-btn">+ Додати адресу</button>
+                  </div>
+                  <div class="info-account__actions">
+                    <button class="info-account__button button button--green">Зберегти</button>
+                    <button class="info-account__button button button--border">Скасувати</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

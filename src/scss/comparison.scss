@@ -1,0 +1,418 @@
+.account {
+  &__comparison {
+  }
+}
+.comparison {
+  &__g-container {
+    @include gridContainer(0);
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(24);
+    row-gap: toRem(8);
+    grid-column: 3 /6;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: start;
+    }
+    &:not(:last-child) {
+      margin-bottom: toRem(16);
+      @media (max-width: $mobile) {
+        margin-bottom: toRem(10);
+      }
+    }
+  }
+
+  &__title {
+    flex-shrink: 0;
+    @media (max-width: $mobile) {
+      padding-right: toRem(15);
+    }
+  }
+
+  &__categories {
+    display: flex;
+    overflow: auto;
+  }
+
+  &__category {
+    @media (max-width: $tablet) {
+      padding: toRem(12) toRem(8) toRem(10);
+      gap: toRem(4);
+      font-size: toRem(13);
+    }
+    @media (max-width: toEm(499.98)) {
+      padding: toRem(4) toRem(8) toRem(2);
+      font-size: toRem(11);
+      max-width: toRem(131);
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        border-color: #6f4a8f;
+      }
+    }
+  }
+
+  &__filters {
+    display: flex;
+    gap: toRem(8);
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: toRem(16);
+      @media (max-width: $tablet) {
+        margin-bottom: toRem(14);
+      }
+      @media (max-width: $mobile) {
+        margin-bottom: toRem(11);
+        flex-direction: column-reverse;
+        align-items: end;
+      }
+    }
+  }
+
+  &__radios {
+    display: flex;
+    gap: toRem(16);
+    align-items: center;
+    @media (max-width: $mobile) {
+      align-self: stretch;
+      justify-content: space-between;
+    }
+  }
+  &__radiobox {
+    font-size: toRem(14);
+    gap: toRem(6);
+    @media (max-width: $mobile) {
+      font-size: toRem(12);
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: toRem(14);
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: toRem(4);
+    color: #4e4f53;
+    font-size: toRem(12);
+    span {
+      text-decoration: underline;
+      transition: text-decoration-color 0.3s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        span {
+          text-decoration-color: transparent;
+        }
+      }
+    }
+    &::before {
+      font-size: toRem(14);
+    }
+    &._icon-cross {
+      &::before {
+        font-size: toRem(10);
+      }
+    }
+  }
+  &__wrapper {
+    position: relative;
+    grid-column: 3 / 6;
+  }
+  &__body {
+  }
+}
+.body-comparison {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-right: toRem(15);
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__button {
+    position: absolute;
+    top: toRem(13);
+    width: toRem(32);
+    height: toRem(32);
+    background-color: #b0b1b3;
+    border-radius: 50%;
+    font-size: toRem(10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s;
+    z-index: 2;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #1a1a1c;
+      }
+    }
+    &--prev {
+      left: toRem(48);
+    }
+    &--next {
+      right: toRem(48);
+    }
+    &:disabled {
+      opacity: 0;
+      visibility: hidden;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__items {
+    display: flex;
+    width: max-content;
+    &:not(:last-child) {
+      margin-bottom: toRem(34);
+    }
+  }
+
+  &__item {
+    flex-shrink: 0;
+    width: toRem(242);
+    &:not(:last-child) {
+      margin-right: toRem(22);
+    }
+    @media (max-width: $tablet) {
+      width: toRem(206);
+    }
+    @media (max-width: toEm(599.98)) {
+      width: toRem(166);
+      &:not(:last-child) {
+        margin-right: toRem(6);
+      }
+    }
+  }
+
+  &__table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: max-content;
+    th {
+      text-align: center;
+      color: #6f4a8f;
+      font-size: toRem(14);
+      font-weight: 600;
+      line-height: 1.4;
+      padding: toRem(4) 0;
+      background-color: #e5e3e3;
+      @media (max-width: toEm(599.98)) {
+        font-size: toRem(11);
+      }
+      span {
+        position: sticky;
+        display: block;
+        top: 0;
+        left: 0;
+        max-width: calc(var(--scrollWidth) - toRem(15));
+      }
+    }
+    td {
+      width: toRem(264);
+      @media (max-width: $tablet) {
+        width: toRem(228);
+      }
+      @media (max-width: toEm(599.98)) {
+        width: toRem(174);
+      }
+
+      span {
+        display: block;
+        font-size: toRem(14);
+        color: #1a1a1c;
+        line-height: 1.4;
+        padding: toRem(6) toRem(14);
+        border-bottom: toRem(1) dashed #b0b1b3;
+        background-color: #e5e3e3;
+        @media (max-width: toEm(599.98)) {
+          padding: toRem(2) toRem(8);
+          font-size: toRem(11);
+        }
+      }
+    }
+    tr:not(:last-child) td {
+      padding-bottom: toRem(8);
+    }
+  }
+}
+.item-comparison {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(10);
+  position: relative;
+  border-radius: toRem(8);
+  border: toRem(1) solid #d8d8d9;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 toRem(4) toRem(8) 0 rgba(41, 41, 41, 0.08);
+  transition: background-color 0.3s;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #ebebec;
+      .item-comparison__image-link img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__remove {
+    position: absolute;
+    top: toRem(16);
+    right: toRem(19);
+    font-size: toRem(10);
+    transition: color 0.3s;
+    color: #4e4f53;
+    width: toRem(18);
+    height: toRem(18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    @media (any-hover: hover) {
+      &:hover {
+        color: #6f4a8f;
+      }
+    }
+  }
+
+  &__image-link {
+    aspect-ratio: 240/198;
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    @media (max-width: $tablet) {
+      aspect-ratio: 204/180;
+    }
+    @media (max-width: toEm(599.98)) {
+      aspect-ratio: 164/127;
+    }
+    &:not(:last-child) {
+      margin-bottom: toRem(24);
+      @media (max-width: toEm(599.98)) {
+        margin-bottom: toRem(11);
+      }
+    }
+    img {
+      transition: transform 0.3s;
+      will-change: transform;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: toRem(14);
+    padding-top: 0;
+    @media (max-width: toEm(599.98)) {
+      padding: toRem(8);
+      padding-top: 0;
+    }
+  }
+  &__title {
+    flex-grow: 1;
+    color: #000;
+    font-size: toRem(20);
+    font-weight: 600;
+    line-height: 1.4;
+    &:not(:last-child) {
+      margin-bottom: toRem(8);
+    }
+    @media (max-width: $tablet) {
+      font-size: toRem(16);
+    }
+    @media (max-width: toEm(599.98)) {
+      font-size: toRem(13);
+      &:not(:last-child) {
+        margin-bottom: toRem(4);
+      }
+    }
+  }
+
+  &__link {
+    transition: color 0.3s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  &__label {
+    font-size: toRem(16);
+    color: #3ab549;
+    line-height: 1.4;
+    &--purple {
+      color: #6f4a8f;
+    }
+    &:not(:last-child) {
+      margin-bottom: toRem(2);
+    }
+    @media (max-width: $tablet) {
+      font-size: toRem(14);
+    }
+    @media (max-width: toEm(599.98)) {
+      font-size: toRem(11);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    gap: toRem(8);
+    align-items: center;
+  }
+
+  &__price {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+    font-size: toRem(20);
+    font-weight: 600;
+    &:has(span) {
+      color: #f00;
+    }
+    span {
+      color: #4e4f53;
+      font-size: toRem(16);
+      text-decoration: line-through;
+    }
+    @media (max-width: $tablet) {
+      font-size: toRem(18);
+      span {
+        font-size: toRem(13);
+      }
+    }
+    @media (max-width: toEm(599.98)) {
+      font-size: toRem(13);
+      span {
+        font-size: toRem(11);
+      }
+    }
+  }
+
+  &__button {
+    padding: toRem(8);
+    font-size: toRem(22);
+    border-radius: toRem(4);
+    @media (max-width: toEm(599.98)) {
+      background-color: transparent;
+      color: #6f4a8f;
+      &.button--green {
+        color: #249c6b;
+      }
+    }
+  }
+}

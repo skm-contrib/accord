@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Каталог"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page page--gray">
+      <div class="page__breadcrumbs breadcrumbs">
+        <div class="breadcrumbs__container">
+          <a href="#" class="breadcrumbs__link _icon-house"></a>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Обладнання</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Печі і пароконвектомати</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page__catalog catalog">
+        <div class="catalog__hero hero-catalog">
+          <img src="img/catalog/hero.webp" alt="Background" class="hero-catalog__bg ibg">
+          <div class="hero-catalog__container">
+            <div class="hero-catalog__body">
+              <h1 class="hero-catalog__title">Ідеальна піца починається з правильного обладнання!</h1>
+              <a href="#" class="hero-catalog__link button button--green">Дивитись більше</a>
+            </div>
+          </div>
+        </div>
+        <section class="catalog__categories categories-catalog">
+          <div class="categories-catalog__container">
+            <h2 class="categories-catalog__title">Печі і пароконвектомати</h2>
+            <div class="categories-catalog__items">
+              <a href="#" class="categories-catalog__item">
+                <div class="categories-catalog__image">
+                  <img src="img/catalog/categories/01.webp" alt="Image" class="ibg">
+                </div>
+                <h3 class="categories-catalog__item-title">Пароконвектомати</h3>
+              </a>
+              <a href="#" class="categories-catalog__item">
+                <div class="categories-catalog__image">
+                  <img src="img/catalog/categories/02.webp" alt="Image" class="ibg">
+                </div>
+                <h3 class="categories-catalog__item-title">Печі для піци</h3>
+              </a>
+              <a href="#" class="categories-catalog__item">
+                <div class="categories-catalog__image">
+                  <img src="img/catalog/categories/03.webp" alt="Image" class="ibg">
+                </div>
+                <h3 class="categories-catalog__item-title">Печі конвекційні</h3>
+              </a>
+              <a href="#" class="categories-catalog__item">
+                <div class="categories-catalog__image">
+                  <img src="img/catalog/categories/04.webp" alt="Image" class="ibg">
+                </div>
+                <h3 class="categories-catalog__item-title">Печі на деревному вугіллі</h3>
+              </a>
+              <a href="#" class="categories-catalog__item">
+                <div class="categories-catalog__image">
+                  <img src="img/catalog/categories/05.webp" alt="Image" class="ibg">
+                </div>
+                <h3 class="categories-catalog__item-title">Печі подові</h3>
+              </a>
+              <a href="#" class="categories-catalog__item">
+                <div class="categories-catalog__image">
+                  <img src="img/catalog/categories/06.webp" alt="Image" class="ibg">
+                </div>
+                <h3 class="categories-catalog__item-title">Турбопечі</h3>
+              </a>
+              <a href="#" class="categories-catalog__item">
+                <div class="categories-catalog__image">
+                  <img src="img/catalog/categories/07.webp" alt="Image" class="ibg">
+                </div>
+                <h3 class="categories-catalog__item-title">Шафи розстійні</h3>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="catalog__body body-catalog">
+          <div class="body-catalog__container">
+            <div class="body-catalog__header">
+              <div class="body-catalog__results">
+                <button data-filter-button
+                  class="body-catalog__filter-button button _icon-filter"><span>Фільтри</span></button>
+                <div data-da=".body-catalog__filter-button span, 767.98, last" class="body-catalog__label">
+                  Знайдено 274 товара
+                </div>
+                <div data-da=".filter-catalog__tags-mobile, 1049.98, first" class="body-catalog__tags tags-catalog">
+                  <div class="tags-catalog__item">
+                    Акції
+                    <button class="tags-catalog__remove _icon-cross"></button>
+                  </div>
+                  <div class="tags-catalog__item">
+                    Новинки
+                    <button class="tags-catalog__remove _icon-cross"></button>
+                  </div>
+                  <div class="tags-catalog__item">
+                    ItPizza
+                    <button class="tags-catalog__remove _icon-cross"></button>
+                  </div>
+                  <button class="tags-catalog__item tags-catalog__item--reset _icon-cross">
+                    Скинути все
+                  </button>
+                </div>
+              </div>
+              <select name="form[]" id="category" data-class-modif="border">
+                <option value="1" selected>Від дешевих до дорогих</option>
+                <option value="2">Від дорогих до дешевих</option>
+                <option value="3">За рейтингом</option>
+              </select>
+            </div>
+            <div class="body-catalog__content">
+              <form action="#" class="body-catalog__filter filter-catalog">
+                <div class="filter-catalog__header">
+                  <h2 class="filter-catalog__section-title">Фільтри</h2>
+                  <button data-filter-close type="button" class="filter-catalog__button _icon-cross"></button>
+                </div>
+                <div class="filter-catalog__tags-mobile">
+                  <button class="filter-catalog__reset">Скинути все</button>
+                </div>
+                <div data-spoilers class="filter-catalog__spoilers">
+                  <details data-open class="filter-catalog__item">
+                    <summary class="filter-catalog__title">Спеціальні пропозиції</summary>
+                    <div class="filter-catalog__body">
+                      <div data-simplebar class="filter-catalog__items">
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content _icon-diamond">
+                            Новинки
+                            <span class="checkbox__count">
+                              (12)
+                            </span>
+                          </span>
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content _icon-discount">
+                            Акції
+                            <span class="checkbox__count">
+                              (10)
+                            </span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </details>
+                  <details data-open class="filter-catalog__item">
+                    <summary class="filter-catalog__title">Бренд</summary>
+                    <div class="filter-catalog__body">
+                      <input type="text" placeholder="Пошук" class="filter-catalog__input">
+                      <div data-simplebar class="filter-catalog__items">
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Apach
+                            <span class="checkbox__count">
+                              (12)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Explora
+                            <span class="checkbox__count">
+                              (7)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            ItPizza
+                            <span class="checkbox__count">
+                              (47)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Josper
+                            <span class="checkbox__count">
+                              (34)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Kopa
+                            <span class="checkbox__count">
+                              (14)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Lainox
+                            <span class="checkbox__count">
+                              (27)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Piron
+                            <span class="checkbox__count">
+                              (77)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Pizza Group
+                            <span class="checkbox__count">
+                              (42)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Rational
+                            <span class="checkbox__count">
+                              (14)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Explora
+                          </span>
+                          <span class="checkbox__count">
+                            (7)
+                          </span>
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Explora
+                            <span class="checkbox__count">
+                              (7)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Explora
+                            <span class="checkbox__count">
+                              (7)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Explora
+                            <span class="checkbox__count">
+                              (7)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Explora
+                            <span class="checkbox__count">
+                              (7)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Explora
+                            <span class="checkbox__count">
+                              (7)
+                            </span>
+                          </span>
+
+                        </label>
+                      </div>
+                    </div>
+                  </details>
+                  <details data-open class="filter-catalog__item">
+                    <summary class="filter-catalog__title">Ціна</summary>
+                    <div class="filter-catalog__body">
+                      <div data-range-wrapper="price" class="filter-catalog__rangebox rangebox">
+                        <div class="rangebox__body">
+                          <div class="rangebox__inputs">
+                            <input data-price-start type="text" class="rangebox__input">
+                            <input data-price-end type="text" class="rangebox__input">
+                          </div>
+                          <button type="button" class="rangebox__button button button--border">
+                            Ок
+                          </button>
+                        </div>
+                        <div data-range data-from="1" data-to="200000" class="rangebox__range price-range"></div>
+                      </div>
+                    </div>
+                  </details>
+                  <details data-open class="filter-catalog__item">
+                    <summary class="filter-catalog__title">Тип управління</summary>
+                    <div class="filter-catalog__body">
+                      <div data-simplebar class="filter-catalog__items">
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Механічний
+                            <span class="checkbox__count">
+                              (27)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Сенсорний
+                            <span class="checkbox__count">
+                              (70)
+                            </span>
+                          </span>
+
+                        </label>
+                        <label class="filter-catalog__checkbox checkbox">
+                          <input type="checkbox">
+                          <span class="checkbox__content">
+                            Цифровий
+                            <span class="checkbox__count">
+                              (42)
+                            </span>
+                          </span>
+
+                        </label>
+                      </div>
+                    </div>
+                  </details>
+                  <details data-open class="filter-catalog__item">
+                    <summary class="filter-catalog__title">Потужність</summary>
+                    <div class="filter-catalog__body">
+                      <div data-range-wrapper="power" class="filter-catalog__rangebox rangebox">
+                        <div class="rangebox__body">
+                          <div class="rangebox__inputs">
+                            <input data-price-start type="text" class="rangebox__input">
+                            <input data-price-end type="text" class="rangebox__input">
+                          </div>
+                          <button type="button" class="rangebox__button button button--border">
+                            Ок
+                          </button>
+                        </div>
+                        <div data-range data-from="0.01" data-to="100" class="rangebox__range"></div>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+                <div class="filter-catalog__footer">
+                  <button class="filter-catalog__submit button button--green">
+                    Показати всі 2043 товара
+                  </button>
+                  <button class="filter-catalog__reset filter-catalog__reset--footer">Скинути все</button>
+                </div>
+                <a href="#" class="filter-catalog__banner">
+                  <img src="img/catalog/banners/01.webp" alt="Image" class="ibg">
+                </a>
+                <a href="#" class="filter-catalog__banner">
+                  <img src="img/catalog/banners/02.webp" alt="Image" class="ibg">
+                </a>
+              </form>
+              <div class="body-catalog__products products-catalog">
+                <div class="products-catalog__items">
+                  @@include('html/products/_item-product-video.htm',{})
+                  @@include('html/products/_item-product-colors.htm',{})
+                  @@include('html/products/_item-product-video.htm',{})
+                  @@include('html/products/_item-product-video.htm',{})
+                  @@include('html/products/_item-product-colors.htm',{})
+                  @@include('html/products/_item-product-video.htm',{})
+                  @@include('html/products/_item-product-video.htm',{})
+                  @@include('html/products/_item-product-colors.htm',{})
+                  @@include('html/products/_item-product-video.htm',{})
+                  @@include('html/products/_item-product-video.htm',{})
+                  @@include('html/products/_item-product-colors.htm',{})
+                  @@include('html/products/_item-product-video.htm',{})
+                  @@include('html/products/_item-product-video.htm',{})
+                  @@include('html/products/_item-product-colors.htm',{})
+                  @@include('html/products/_item-product-video.htm',{})
+                  @@include('html/products/_item-product-video.htm',{})
+                  @@include('html/products/_item-product-colors.htm',{})
+                  @@include('html/products/_item-product-video.htm',{})
+                </div>
+                <a class="products-catalog__tablet-banner">
+                  <img src="img/catalog/banners/tablet.webp" alt="Image" class="ibg">
+                </a>
+                <div class="products-catalog__pagination product-pagination">
+                  <div class="product-pagination__count">
+                    <div class="product-pagination__label">
+                      На сторінці
+                    </div>
+                    <select name="form[]" data-class-modif="border">
+                      <option value="1" selected>9</option>
+                      <option value="2">12</option>
+                      <option value="3">18</option>
+                      <option value="4">24</option>
+                    </select>
+                  </div>
+                  <div class="product-pagination__pages">
+                    <a href="#" class="product-pagination__arrow _disabled _icon-ch-left"></a>
+                    <ul class="product-pagination__list">
+                      <li class="product-pagination__item">
+                        <a href="#" class="product-pagination__link">1</a>
+                      </li>
+                      <li class="product-pagination__item">
+                        <a href="#" class="product-pagination__link _active">2</a>
+                      </li>
+                      <li class="product-pagination__item">
+                        <a href="#" class="product-pagination__link">3</a>
+                      </li>
+                      <li class="product-pagination__item">
+                        <a href="#" class="product-pagination__link">4</a>
+                      </li>
+                      <li class="product-pagination__item">
+                        <a href="#" class="product-pagination__link">5</a>
+                      </li>
+                      <li class="product-pagination__item">
+                        <a href="#" class="product-pagination__link">6</a>
+                      </li>
+                    </ul>
+                    <a href="#" class="product-pagination__arrow _icon-ch-right"></a>
+                  </div>
+                  <button class="product-pagination__button button button--green _icon-cart">
+                    Показати ще 9
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="catalog__viewed recomendations">
+          <div class="recomendations__grid-container">
+            <div class="recomendations__header">
+              <h2 class="recomendations__title">
+                Переглянуті товари
+              </h2>
+            </div>
+
+            <div data-simplebar class="recomendations__body">
+              <div class="recomendations__items">
+                @@include('html/products/_item-product-min-discount.htm',{})
+                @@include('html/products/_item-product-min.htm',{})
+                @@include('html/products/_item-product-min-discount.htm',{})
+                @@include('html/products/_item-product-min.htm',{})
+                @@include('html/products/_item-product-min-discount.htm',{})
+                @@include('html/products/_item-product-min.htm',{})
+                @@include('html/products/_item-product-min-discount.htm',{})
+                @@include('html/products/_item-product-min.htm',{})
+                @@include('html/products/_item-product-min-discount.htm',{})
+                @@include('html/products/_item-product-min.htm',{})
+                @@include('html/products/_item-product-min-discount.htm',{})
+                @@include('html/products/_item-product-min.htm',{})
+                @@include('html/products/_item-product-min-discount.htm',{})
+                @@include('html/products/_item-product-min.htm',{})
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="catalog__faq faq-section">
+          <div class="faq-section__grid-container">
+            <div class="faq-section__content">
+              <div class="faq-section__body">
+                <h2 class="faq-section__title">Пароконвектомати - Часті питання</h2>
+                <div class="faq-section__text text">
+                  <p>
+                    Важливі поради та відповіді, які допоможуть вам обрати ідеальний пароконвектомат для вашого бізнесу
+                  </p>
+                </div>
+                <div data-spoilers class="faq-section__spoilers faq-spoilers">
+                  <details class="faq-spoilers__item">
+                    <summary class="faq-spoilers__title">Пароконвектомати від професіоналів: найпопулярніші товари в
+                      2024
+                      році:</summary>
+                    <div class="faq-spoilers__text text">
+                      <p>
+                        Пароконвектомат — це унікальне теплове обладнання, яке дозволяє впоратися з більшістю завдань з
+                        приготування різних страв. Спекти пироги, тушкувати м'ясо, приготувати овочі і так далі — це
+                        пристрій може майже все. Ефективно замінює відразу декілька кухонних агрегатів, економлячи таким
+                        чином місце на кухні і електроенергію. Тому купити пароконвектомат в Києві — це вигідне і
+                        розумне
+                        капіталовкладення.
+                      </p>
+                    </div>
+                  </details>
+                  <details class="faq-spoilers__item">
+                    <summary class="faq-spoilers__title">Пароконвектомати для хореки, ресторанів та барів:</summary>
+                    <div class="faq-spoilers__text text">
+                      <p>
+                        Пароконвектомат — це унікальне теплове обладнання, яке дозволяє впоратися з більшістю завдань з
+                        приготування різних страв. Спекти пироги, тушкувати м'ясо, приготувати овочі і так далі — це
+                        пристрій може майже все. Ефективно замінює відразу декілька кухонних агрегатів, економлячи таким
+                        чином місце на кухні і електроенергію. Тому купити пароконвектомат в Києві — це вигідне і
+                        розумне
+                        капіталовкладення.
+                      </p>
+                    </div>
+                  </details>
+                  <details class="faq-spoilers__item">
+                    <summary class="faq-spoilers__title">Яка вартість групи товарів Пароконвектомати?</summary>
+                    <div class="faq-spoilers__text text">
+                      <p>
+                        Пароконвектомат — це унікальне теплове обладнання, яке дозволяє впоратися з більшістю завдань з
+                        приготування різних страв. Спекти пироги, тушкувати м'ясо, приготувати овочі і так далі — це
+                        пристрій може майже все. Ефективно замінює відразу декілька кухонних агрегатів, економлячи таким
+                        чином місце на кухні і електроенергію. Тому купити пароконвектомат в Києві — це вигідне і
+                        розумне
+                        капіталовкладення.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+              <div data-da=".faq-section__body, 991.98, 2" class="faq-section__image">
+                <img src="img/faq.webp" alt="Image" class="ibg">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-da=".catalog, 767.98, last" class="catalog__readmore readmore">
+          <div data-showmore="items" class="readmore__container">
+            <div data-showmore-content="1" class="readmore__content text">
+              <div>
+                <img src="img/catalog/seo.webp" alt="Image">
+                <h4>Професійне оснащення для ресторанів та кафе від Accord Group</h4>
+                <p>
+                  Accord Group спеціалізується на комплексному оснащенні професійним посудом і обладнанням для
+                  ресторанів,
+                  кафе, барів, фаст-фудів та інших закладів громадського харчування. Ми пропонуємо понад 70 всесвітньо
+                  відомих брендів, включаючи Stalgast, iSi, Stölzle, Porland, Eternum, APS, Lubiana, Hamilton Beach,
+                  Kogast та інші.
+                </p>
+              </div>
+              <div>
+                <p>
+                  Accord Group спеціалізується на комплексному оснащенні професійним посудом і обладнанням для
+                  ресторанів,
+                  кафе, барів, фаст-фудів та інших закладів громадського харчування. Ми пропонуємо понад 70 всесвітньо
+                  відомих брендів, включаючи Stalgast, iSi, Stölzle, Porland, Eternum, APS, Lubiana, Hamilton Beach,
+                  Kogast та інші. Accord Group спеціалізується на комплексному оснащенні професійним посудом і
+                  обладнанням
+                  для ресторанів,
+                  кафе, барів, фаст-фудів та інших закладів громадського харчування. Ми пропонуємо понад 70 всесвітньо
+                  відомих брендів, включаючи Stalgast, iSi, Stölzle, Porland, Eternum, APS, Lubiana, Hamilton Beach,
+                  Kogast та інші.
+                </p>
+                <ol>
+                  <li>
+                    Конвекція — приготування їжі відбувається під впливом гарячого повітря. Всі процеси відбуваються
+                    всередині камери, яка закривається герметично. Тому продукти готуються швидко і рівномірно.
+                  </li>
+                  <li>
+                    Випаровування. Існує два типи машин:
+                    <ul>
+                      <li>
+                        Бойлерні — пара утворюється завдяки роботі парогенератора. З таким пристроєм важливо стежити за
+                        постійним рівнем води. До мінусів такої конструкції можна віднести схильність до утворення
+                        нальоту на ТЕНах. До плюсів — зручність приготування корисної їжі.
+                      </li>
+                      <li>
+                        Інжекторні — секрет роботи такого агрегату полягає в уприскуванням води в духовку на вентилятор,
+                        який «розкидає» її на ТЕНи, і вона випаровується. Пар, який вже виконав своє призначення,
+                        накопичується в спеціальному колекторі, де охолоджується і виводиться. Плюс такої машини –
+                        порівняно невелика вартість.
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+                <p>
+                  Accord Group спеціалізується на комплексному оснащенні професійним посудом і обладнанням для
+                  ресторанів,
+                  кафе, барів, фаст-фудів та інших закладів громадського харчування. Ми пропонуємо понад 70 всесвітньо
+                  відомих брендів, включаючи Stalgast, iSi, Stölzle, Porland, Eternum, APS, Lubiana, Hamilton Beach,
+                  Kogast та інші.
+                </p>
+                <p>
+                  Accord Group спеціалізується на комплексному оснащенні професійним посудом і обладнанням для
+                  ресторанів,
+                  кафе, барів, фаст-фудів та інших закладів громадського харчування. Ми пропонуємо понад 70 всесвітньо
+                  відомих брендів, включаючи Stalgast, iSi, Stölzle, Porland, Eternum, APS, Lubiana, Hamilton Beach,
+                  Kogast та інші.
+                </p>
+              </div>
+            </div>
+            <button hidden data-showmore-button type="button" class="readmore__button _icon-arrow-down"><span>Показати
+                ще</span><span>Сховати</span></button>
+          </div>
+        </section>
+      </div>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

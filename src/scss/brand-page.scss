@@ -1,0 +1,138 @@
+.hero-catalog {
+
+    &-container {
+        display: flex;
+
+        justify-content: end;
+    }
+
+    &__body {
+        max-width: 40%;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #6F4A8F7A;
+        padding: toRem(72) toRem(44);
+
+        @media (max-width:$tablet) {
+            padding: toRem(46) toRem(34);
+        }
+
+        @media (max-width:$mobile) {
+            padding: toRem(18);
+            max-width: 50%;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        &__brand-logo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__brand-logo {
+            object-fit: contain;
+            width: toRem(200);
+
+            @media (max-width:$mobile){
+                width: toRem(100); 
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+}
+
+.description-catalog {
+    padding-top: toRem(76);
+
+    @media (max-width:$tablet) {
+        padding-top: toRem(56);
+    }
+
+    @media (max-width:$mobile){
+        padding-top: toRem(26); 
+    }
+
+
+    &__title {
+        font-size: toRem(40);
+        line-height: toRem(56);
+        color: #249C6B;
+        font-weight: 700;
+
+        @media (max-width:$tablet) {
+            font-size: toRem(32);
+            line-height: toRem(44.8);
+            font-weight: 600;
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(24); 
+            line-height: toRem(33.6);  
+        }
+    }
+
+    &__content {
+        padding-top: toRem(34);
+        display: flex;
+        flex-direction: row;
+        gap: toRem(8);
+
+        @media (max-width:$tablet) {
+            padding-top: toRem(24);
+            flex-direction: column;
+            gap: toRem(8);
+        }
+    }
+
+    &__image {
+        width: toRem(200);
+
+        @media (max-width:$tablet) {
+            width: toRem(178);
+        }
+
+        @media (max-width:$mobile){
+            width: toRem(100); 
+        }
+    }
+
+    &__text {
+        font-size: toRem(18);
+        line-height: toRem(25.2);
+        color: #1A1A1C;
+        font-weight: 400;
+
+        display: flex;
+        flex-direction: column;
+        gap: toRem(8);
+
+        @media (max-width:$tablet) {
+            font-size: toRem(16);
+            line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(14); 
+            line-height: toRem(19.6);   
+        }
+    }
+
+    &__list {
+        padding-left: toRem(20);
+    }
+
+    &__item {
+        list-style-type: disc;
+    }
+}
+
+.ibg {}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Особистий кабінет"
+})
+
+<body>
+  <div class="wrapper">
+    <main class="page page--gray">
+      <div class="page__breadcrumbs breadcrumbs">
+        <div class="breadcrumbs__container">
+          <a href="#" class="breadcrumbs__link _icon-house"></a>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Головна</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#footer">Історія замовлень</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="page__account account">
+        <div class="account__container">
+          <div class="account__content">
+            <div class="account__aside aside-account">
+              <h2 class="aside-account__title">Особистий кабінет</h2>
+              <a href="info-account.html" class="aside-account__link link-account _icon-user">
+                Особиста інформація
+              </a>
+              <a href="wishlist-account.html" class="aside-account__link link-account _icon-heart">
+                Список бажань
+                <span>4</span>
+              </a>
+              <a href="history-account.html" class="aside-account__link _active link-account _icon-list">
+                Історія замовлень
+              </a>
+              <a href="#" class="aside-account__link link-account _icon-libra">
+                Список порівнянь
+                <span>3</span>
+              </a>
+              <a href="offer-account.html" class="aside-account__link link-account  _icon-bag">
+                Комерційні пропозиції
+              </a>
+              <a href="#" class="aside-account__link link-account _icon-cart">
+                Кошик
+                <span>3</span>
+              </a>
+              <a href="#" class="aside-account__link link-account link-account--exit _icon-exit">
+                Вийти
+              </a>
+            </div>
+            <div class="account__body">
+              <div class="account__offer offer-account">
+                <h1 class="offer-account__title title-account">
+                  Історія замовлень
+                </h1>
+                <div class="error-account">
+                  <h2 class="error-account__title">
+                    Ви ще не здійснили жодної покупки
+                  </h2>
+                  <p class="error-account__text">
+                    У вас ще немає замовлень. Перегляньте наш асортимент і зробіть своє перше замовлення
+                  </p>
+                  <img src="img/account/errors/history.svg" alt="Image" class="error-account__image">
+                  <a href="#" class="error-account__link button button--green">
+                    Переглянути каталог
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

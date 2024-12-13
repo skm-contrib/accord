@@ -1,0 +1,195 @@
+.breadcrumbs{
+    background: #ebebec;
+}
+.brands {
+    padding-top: toRem(30);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(34);
+    }
+
+    &__title {
+        font-size: toRem(40);
+        line-height: toRem(56);
+        font-weight: 700;
+        color: #249C6B;
+
+        @media (max-width:$tablet) {
+            font-size: toRem(30);
+            line-height: toRem(44.8);
+        }
+
+        @media (max-width:$mobile) {
+            font-size: toRem(32);
+            line-height: toRem(44.8);
+        }
+    }
+
+    &__description {
+        font-size: toRem(18);
+        font-weight: 400;
+        line-height: toRem(25.2);
+        color: #1A1A1C;
+
+        display: flex;
+        flex-direction: column;
+        gap: toRem(24);
+
+        @media (max-width:$tablet) {
+            font-size: toRem(16);
+            line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile) {
+            font-size: toRem(16);
+            line-height: toRem(22.4);
+        }
+    }
+
+    &__alphabet {
+        display: flex;
+        flex-direction: row;
+        gap: toRem(24);
+        align-items: center;
+
+        @media (max-width:$mobile) {
+            align-items: start;
+        }
+
+        &-container {
+            display: flex;
+            flex-direction: row;
+            gap: toRem(8);
+            flex-wrap: wrap;
+
+            @media (max-width:$mobile) {
+                justify-content: end;
+            }
+
+            label:has(input:checked) {
+                background-color: #249C6B;
+                color: #fff;
+            }
+
+            label {
+                justify-content: center;
+                position: relative;
+                display: flex;
+                align-items: center;
+            }
+
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+
+    &__alphabet-title {
+        font-size: toRem(18);
+        line-height: toRem(25.2);
+        font-weight: 400;
+        text-transform: uppercase;
+        text-wrap: nowrap;
+
+        @media (max-width:$tablet) {
+            font-size: toRem(16);
+            line-height: toRem(22.4);
+        }
+    }
+
+    &__alphabet-button {
+        position: relative;
+        cursor: pointer;
+        color: #4E4F53;
+        font-size: toRem(18);
+        line-height: toRem(25.2);
+        font-weight: 400;
+        background-color: #EBEBEC;
+        border-radius: 100%;
+        width: toRem(30);
+        height: toRem(30);
+        text-align: center;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #249C6B;
+            color: #fff;
+        }
+    }
+}
+
+.brands-section {
+    background-color: white;
+    display: grid;
+    gap: toRem(252);
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width:$tablet) {
+        grid-template-columns: 1fr;
+        gap: toRem(30);
+    }
+}
+
+.brands-category {
+    gap: toRem(34);
+    flex-direction: column;
+    display: flex;
+
+    &__header {
+        border-bottom: 1px solid #E5E3E3;
+        padding-bottom: toRem(24);
+        padding-top: toRem(8);
+    }
+
+    &__title {
+        font-size: toRem(32);
+        line-height: toRem(44.8);
+        font-weight: 600;
+        color: #1A1A1C;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: toRem(78);
+
+        @media (max-width:$mobile) {
+            gap: 0;
+        }
+    }
+}
+
+.brand-item {
+    padding: 0 toRem(15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: toRem(8);
+    text-align: center;
+    align-items: center;
+
+    &__image {
+        width: toRem(90);
+        height: toRem(90);
+        object-fit: contain;
+    }
+
+    &__name {
+        text-align: center;
+        font-size: toRem(20);
+        line-height: toRem(28);
+        font-weight: 600;
+        color: #4E4F53;
+
+        @media (max-width:$mobile) {
+            font-size: toRem(20);
+            line-height: toRem(28);
+        }
+    }
+}
