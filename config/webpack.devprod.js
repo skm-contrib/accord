@@ -6,6 +6,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import TerserPlugin from "terser-webpack-plugin";
 
 import * as path from 'path';
+import { warn } from 'console';
 
 const srcFolder = "src";
 const builFolder = "dist";
@@ -49,6 +50,9 @@ const config = {
 		path: `${paths.build}`,
 		filename: 'app.min.js',
 		publicPath: '/',
+	},
+	stats: {
+		warnings: false
 	},
 	module: {
 		rules: [

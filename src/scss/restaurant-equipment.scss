@@ -1,0 +1,52 @@
+.catalog {
+
+    &__description {
+    }
+}
+.description-catalog {
+
+    &__container {
+    }
+
+    &__title {
+    }
+
+    &__content {
+        gap: toRem(24);
+
+        img {
+            border-radius: toRem(8);
+
+            @media (max-width:$tablet){
+                width: 100%;
+                max-height: toRem(320);
+            }
+        }
+    }
+
+    &__image {
+    }
+
+    &__text {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__page-note{
+        padding: toRem(34) 0;
+        font-size: toRem(20);
+        font-weight: 600;
+        line-height: toRem(28);
+
+        @media (max-width:$mobile){
+             font-size: toRem(16);
+                line-height: toRem(22.4); 
+        }
+    }
+}
+.ibg {
+}

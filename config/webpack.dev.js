@@ -67,6 +67,9 @@ const config = {
 			`${paths.src}/img/**/*.*`
 		],
 	},
+	stats: {
+		warnings: false // Вимикає відображення попереджень
+	},
 	module: {
 		rules: [
 			{

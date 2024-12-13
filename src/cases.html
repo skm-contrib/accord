@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Контакти"
+})
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page page--gray">
+            <div class="page__breadcrumbs breadcrumbs">
+                <div class="breadcrumbs__container">
+                    <a href="#" class="breadcrumbs__link _icon-house"></a>
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="case">
+                <div class="case__img-wrapper"><img src="img/cases/casebanner.jpeg" class="case__banner ibg" alt="Image"></div>
+                <div class="case__contacts__container">
+                    <div class="contacts">
+                        <h1 class="contacts__title">Супермаркет ULTRAMARKET</h1>
+                        <div class="contacts__section">
+                            <h4 class="contacts__subtitle">Основні дані</h4>
+                            <ul class="contacts__list">
+                                <li class="contacts__item">Адреса: м. Київ, просп. Перемоги, 67</li>
+                                <li class="contacts__item">Формат: супермаркет</li>
+                                <li class="contacts__item">Площа закладу: 2850 м²</li>
+                            </ul>
+                        </div>
+                        <div class="contacts__section">
+                            <h4 class="contacts__subtitle">Трансформація стандартної кухні "МегаМаркету" в сучасний "UltraMatket"</h4>
+                            <p class="contacts__description">Нещодавно в Києві на проспекті Перемоги, 67, відкрився сучасний “Ultramarket”. Наша компанія виграла тендер та стала одним з основних помічників в обладнанні кухні.</p>
+                        </div>
+                        <img src="img/cases/inside.jpeg" alt="Image" class="case__image">
+                        <div class="case__objective">
+                            <h4 class="case__objective-title">Ціль проєкту:</h4>
+                            <p class="case__objective-description">Оснащення кухонним обладнанням цехів кухонь нового супермаркета.</p>
+                        </div>
+                        <div class="case__actions">
+                            <h4 class="case__actions-title">Що було зроблено:</h4>
+                            <ol class="case__actions-list">
+                                <li class="case__actions-item">Постачання сучасного та якісного обладнання у супермаркет "UltraMarket" (колишній "МегаМаркет")</li>
+                                <li class="case__actions-item">Комерційна пропозиція по обладнанню та пакету послуг для оснащення об'єкта:</li>
+                            </ol>
+                            <ul class="case__services-list">
+                                <li class="case__services-item">доставці</li>
+                                <li class="case__services-item">монтажу</li>
+                                <li class="case__services-item">пусконалагоджуваних робіт</li>
+                                <li class="case__services-item">гарантійним забов'язанням</li>
+                                <li class="case__services-item">сервісному супроводу.</li>
+                            </ul>
+                        </div>
+                        <div class="case__slider splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="" alt="Image" class="case__slide ibg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="" alt="Image" class="case__slide ibg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="" alt="Image" class="case__slide ibg">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="splide__arrows">
+                                <button class="splide__arrow splide__arrow--prev _icon-ch-left"></button>
+                                <div class="splide__pagination"></div>
+                                <button class="splide__arrow splide__arrow--next _icon-ch-right"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contacts__form-container">
+                <img src="img/contacts/coffeemachine.jpg" alt="contacts" class="contacts__image ibg">
+                <div class="contacts__form">
+                    <div class="contacts__form__image-rect"></div>
+                    <div class="contacts__form__container">
+                        <div class="contacts__form-elements">
+                            <h3 class="contacts__form-elements-title">Написати нам</h3>
+                            <p class="contacts__form-elements-description">Заповніть форму нижче, і наші експерти
+                                зв'яжуться
+                                з вами для
+                                безкоштовної консультації.</p>
+                            <div class="contacts__form-elements__inputs">
+                                <input type="text" placeholder="Ім'я" class="contacts__form-elements-input">
+                                <input type="text" placeholder="E-mail" class="contacts__form-elements-input">
+                                <textarea placeholder="Повідомлення"
+                                    class="contacts__form-elements-textarea"></textarea>
+                            </div>
+                            <button class="contacts__form-elements-button button">Отримати консультацію</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

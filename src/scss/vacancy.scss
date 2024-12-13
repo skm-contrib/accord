@@ -18,6 +18,10 @@
             line-height: toRem(44.8);
             font-weight: 600;
         }
+
+        @media (max-width:$mobile){
+              padding-top: toRem(30);
+        }
     }
 
     &__content {
@@ -61,11 +65,20 @@
             font-size: toRem(16);
             line-height: toRem(22.4);
         }
+
+        @media (max-width:$mobile){
+            font-size: toRem(14);
+            line-height: toRem(19.6); 
+        }
     }
 
     &__button {
         width: fit-content;
         font-size: toRem(15);
+
+        @media (max-width:$mobile){
+             width: 100%; 
+        }
     }
 
     &__reasons {
@@ -84,6 +97,11 @@
             font-size: toRem(24);
             line-height: toRem(33.6);
         }
+
+        @media (max-width:$mobile){
+            font-size: toRem(20);
+            line-height: toRem(28); 
+        }
     }
 
     &__reasons-list {
@@ -101,6 +119,15 @@
         background-color: #D8D8D9;
         justify-content: center;
         text-align: center;
+        min-height: toRem(131);
+
+        @media (max-width:$tablet){
+            min-height: toRem(108);
+        }
+
+        @media (max-width:$mobile){
+            min-height: toRem(102); 
+        }
     }
 
     &__reason-title {
@@ -120,6 +147,11 @@
         line-height: toRem(25.2);
         color: #4E4F53;
         font-weight: 400;
+
+        @media (max-width:$mobile){
+            font-size: toRem(16);
+            line-height: toRem(22.4);  
+        }
     }
 
     &__note {
@@ -127,9 +159,15 @@
         font-weight: 400;
         line-height: toRem(25.2);
         color: #1A1A1C;
+
         @media (max-width:$tablet){
             font-size: toRem(16);
             line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(14);
+            line-height: toRem(19.6);
         }
     }
 
@@ -149,6 +187,11 @@
             font-size: toRem(24);
             line-height: toRem(33.6);
         }
+
+        @media (max-width:$mobile){
+            font-size: toRem(20);
+            line-height: toRem(28); 
+        }
     }
 
     &__offers-description {
@@ -160,6 +203,11 @@
         @media (max-width:$tablet){
             font-size: toRem(16);
             line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(14);
+            line-height: toRem(19.6); 
         }
     }
 
@@ -192,6 +240,11 @@
         line-height: toRem(25.2);
         font-weight: 600;
         color: #1A1A1C;
+
+        @media (max-width:$mobile){
+            font-size: toRem(16);
+            line-height: toRem(22.4); 
+        }
     }
 
     &__offer-description {
@@ -203,6 +256,11 @@
         @media (max-width:$tablet){
             font-size: toRem(16);
             line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile){
+              font-size: toRem(14);
+                line-height: toRem(19.6);
         }
     }
 
@@ -253,6 +311,10 @@
 
     &__gallery-image {
         border-radius: toRem(8);
+
+        @media (max-width:$mobile){
+             aspect-ratio: 1/1; 
+        }
     }
 
     &__values {
@@ -266,9 +328,9 @@
         line-height: toRem(28);
         font-weight: 600;
         color: #1A1A1C;
-    }
 
-    &__values-list {}
+
+    }
 
     &__value {
         list-style-type: disc;
@@ -277,15 +339,34 @@
         line-height: toRem(25.2);
         font-weight: 400;
         color: #1A1A1C;
+
+        @media (max-width:$tablet){
+            font-size: toRem(16);
+            line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(14);
+            line-height: toRem(19.6); 
+        }
     }
 
-    &__list {}
 
     &__list-title {
         font-size: toRem(32);
         line-height: toRem(44.8);
         font-weight: 600;
         color: #1A1A1C;
+
+        @media (max-width:$tablet){
+            font-size: toRem(24);
+            line-height: toRem(33.6);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(20);
+            line-height: toRem(28); 
+        }
     }
 
     &__list-description {
@@ -293,6 +374,16 @@
         line-height: toRem(25.2);
         color: #1A1A1C;
         font-weight: 400;
+
+        @media (max-width:$tablet){
+            font-size: toRem(16);
+            line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(14);
+            line-height: toRem(19.6); 
+        }
     }
 
     &__items {
@@ -300,6 +391,10 @@
         gap: toRem(24);
         flex-direction: column;
         display: flex;
+
+        @media (max-width:$tablet){
+            padding-top: toRem(24);
+        }
     }
 
     &__item {
@@ -309,11 +404,20 @@
         display: flex;
         padding: toRem(18);
         gap: toRem(8);
+
+        @media (max-width:$tablet){
+            padding: toRem(14);
+        }
     }
 
     &__item-image {
         width: toRem(50);
         height: toRem(50);
+
+        @media (max-width:$tablet){
+            height: toRem(40);
+            width: toRem(40);
+        }
     }
 
     &__item-content {
@@ -327,11 +431,22 @@
         line-height: toRem(25.2);
         font-weight: 400;
         color: #1A1A1C;
+
+        @media (max-width:$tablet){
+            font-size: toRem(16);
+            line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(14);
+            line-height: toRem(19.6); 
+        }
     }
 
     &__item-link {
         width: fit-content;
-        border-bottom: toRem(1) solid #6F4A8F;
+        text-decoration: underline;
+        text-underline-offset: toRem(4);
         color: #6F4A8F;
         font-size: toRem(24);
         font-weight: 600;
@@ -339,7 +454,17 @@
         transition: all 0.3s;
 
         &:hover{
-            border-bottom: toRem(1) solid transparent;
+            text-decoration-color: transparent;
+        }
+
+        @media (max-width:$tablet){
+            font-size: toRem(20);
+            line-height: toRem(28);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(16);
+            line-height: toRem(22.4);
         }
     }
 
@@ -348,13 +473,38 @@
         font-size: toRem(18);
         line-height: toRem(25.2);
         font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:$tablet){
+            font-size: toRem(16);
+            line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(14);
+            line-height: toRem(19.6);
+             flex-direction: column; 
+             gap: toRem(14);
+
+             margin-left: toRem(-50);
+        }
     }
 
 
-    &__item-button {
+    &__item-button { 
         height: fit-content;
         font-size: toRem(15);
         align-self: end;
+        width: fit-content;
+
+        @media (max-width:$tablet){
+            font-size: toRem(13);
+        }
+
+        @media (max-width:$mobile){
+             width: 100%; 
+        }
     }
 
     &__resume-note {
@@ -363,6 +513,17 @@
         line-height: toRem(25.2);
         font-weight: 400;
         color: #1A1A1C;
+
+        @media (max-width:$tablet){
+            padding-top: toRem(24);
+            font-size: toRem(16);
+            line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(14);
+            line-height: toRem(19.6);  
+        }
     }
 
     &__form-container {
@@ -374,6 +535,10 @@
         position: relative;
         margin: 0 auto;
         margin: 0 toRem(113);
+
+        @media (max-width:$tablet){
+            margin: 0;
+        }
 
         &-image {
             position: absolute;
@@ -404,6 +569,10 @@
         position: relative;
         z-index: 1;
         padding: toRem(24) toRem(116);
+
+        @media (max-width:$mobile){
+            padding: toRem(24) toRem(17); 
+        }
     }
 
     &__form-title {
@@ -418,6 +587,16 @@
         font-size: toRem(18);
         font-weight: 400;
         line-height: toRem(25.2);
+
+        @media (max-width:$tablet){
+            font-size: toRem(16);
+            line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(14);
+            line-height: toRem(19.6); 
+        }
     }
 
     &__form-fields {
@@ -432,12 +611,23 @@
         display: flex;
         flex-direction: row;
         gap: toRem(14);
+
+        @media (max-width:$mobile){
+            flex-direction: column; 
+            gap: toRem(14);
+            width: 100%;
+        }
     }
 
     &__form-input {
         background-color: white;
         border-radius: toRem(8);
         padding: toRem(14);
+
+        @media (max-width:$mobile){
+            width: 100%;  
+            font-size: toRem(13);
+        }
     }
 
     &__form-textarea {
@@ -446,6 +636,10 @@
         padding: toRem(14);
         resize: none;
         height: toRem(116);
+
+        @media (max-width:$mobile){
+             font-size: toRem(13); 
+        }
     }
 
     &__form-file_input {
@@ -460,6 +654,12 @@
         span {
             color: #2D3192;
         }
+
+        @media (max-width:$mobile){
+             font-size: toRem(11); 
+             text-align: start;
+             padding: toRem(14)
+        }
     }
 
     &__form-file {
@@ -473,5 +673,9 @@
         font-size: toRem(15);
         line-height: toRem(21);
         font-weight: 600;
+
+        @media (max-width:$mobile){
+                width: 100%; 
+        }
     }
 }

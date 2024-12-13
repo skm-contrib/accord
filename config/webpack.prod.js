@@ -65,6 +65,9 @@ const config = {
 		filename: 'app.min.js',
 		publicPath: '/',
 	},
+	stats: {
+		warnings: false // Вимикає відображення попереджень
+	},
 	module: {
 		rules: [
 			{
