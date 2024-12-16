@@ -1,0 +1,108 @@
+.vacancies {
+
+    &__values {
+    }
+
+    &__values-title {
+    }
+
+    &__values-description {
+        font-size: toRem(18);
+        font-weight: 400;
+        line-height: toRem(25.2);
+        color: #1A1A1C;
+
+        @media (max-width:$tablet){
+            font-size: toRem(16);
+            line-height: toRem(22.4);
+        }
+
+        @media (max-width:$mobile){
+            font-size: toRem(14);
+            line-height: toRem(19.6); 
+        }
+    }
+
+    &__values-list {
+    }
+
+    &__value {
+    }
+}
+
+ 
+.vacancies {
+
+    &__form-container {
+    }
+
+    &__form {
+    }
+
+    &__form-content {
+    }
+
+    &__form-title.page-form {
+        color: #1A1A1C;
+    }
+
+    &__form-description.page-form {
+        color: #1A1A1C;
+    }
+
+    &__form-fields {
+    }
+
+    &__form-inputs {
+        width: 100%;
+    }
+
+    &__form-input {
+        border: toRem(1.5) solid #646464;
+    }
+
+    &__form-textarea {
+        border: toRem(1.5) solid #646464;
+    }
+
+    &__form-file {
+        border: toRem(1.5) solid #646464;
+
+        &_input {
+        }
+    }
+
+    &__form-button {
+    }
+}
+.button {
+}
+.button--green {
+}
+
+.vacancies__form-file_input {
+    cursor: pointer;
+    border: toRem(2) dashed transparent;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      border-color: #249c6b; // Змінюємо колір рамки при ховері
+      background-color: #f0f8ff; // Змінюємо фон при ховері
+      color: #249c6b; // Змінюємо текст при ховері
+    }
+  
+    span {
+      font-size: 14px;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #ff5722; // Змінюємо колір тексту в спані при ховері
+      }
+    }
+  
+    // Ховаємо реальний input file
+    .vacancies__form-file {
+      display: none;
+    }
+  }
+  

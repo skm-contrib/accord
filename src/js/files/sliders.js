@@ -29,6 +29,55 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  const casesSliders = document.querySelectorAll(".cases-section__slider");
+
+    if (casesSliders) casesSliders.forEach((slider => {
+        new Splide(slider, {
+            perPage: 2,
+            perMove: 1,
+            arrows: true,
+            autoplay: true,
+            interval: 5e3,
+            pauseOnHover: true,
+            pagination: false,
+            gap: "2.125rem",
+            breakpoints: {
+                1299.98: {
+                    perPage: 2
+                }
+            }
+        }).mount();
+    }));
+
+  const casesSlidersLong = document.querySelectorAll(".cases-section-long__slider");
+
+  if (casesSlidersLong) casesSlidersLong.forEach((slider => {
+      new Splide(slider, {
+          perPage: 2,
+          perMove: 1,
+          arrows: false,
+          autoplay: true,
+          interval: 5e3,
+          pauseOnHover: true,
+          pagination: true,
+          gap: "2.125rem",
+          breakpoints: {
+              1299.98: {
+                  perPage: 2
+              },
+              991.98: {
+                  perPage: 2,
+                  gap: "0.875rem"
+              },
+              767.98: {
+                  perPage: 2,
+              },
+              449.98: {
+                  perPage: 2,
+              }
+          }
+      }).mount();
+  }));
   const brandSliders = document.querySelectorAll(".brands-section__slider");
 
   if (brandSliders) {

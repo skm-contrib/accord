@@ -2917,6 +2917,42 @@
                 }
             }).mount();
         }));
+        
+        const casesSliders = document.querySelectorAll(".cases-section__slider");
+
+        if (casesSliders) casesSliders.forEach((slider => {
+            new Splide(slider, {
+                type: "loop",
+                perPage: 7,
+                perMove: 1,
+                arrows: true,
+                autoplay: true,
+                interval: 5e3,
+                pauseOnHover: true,
+                pagination: false,
+                gap: "2.125rem",
+                breakpoints: {
+                    1299.98: {
+                        perPage: 6
+                    },
+                    991.98: {
+                        perPage: 5
+                    },
+                    767.98: {
+                        perPage: 4,
+                        gap: "1.5rem"
+                    },
+                    449.98: {
+                        perPage: 3,
+                        gap: "0.5rem",
+                        padding: {
+                            right: "2.375rem"
+                        }
+                    }
+                }
+            }).mount();
+        }));
+        
         const brandSliders = document.querySelectorAll(".brands-section__slider");
         if (brandSliders) brandSliders.forEach((slider => {
             new Splide(slider, {
